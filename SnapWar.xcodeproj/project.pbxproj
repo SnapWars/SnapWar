@@ -16,6 +16,8 @@
 		90BEDE8F243BCA3B003BC12D /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BEDE8E243BCA3B003BC12D /* DashboardViewController.swift */; };
 		90BEDE91243BCABB003BC12D /* WarCreatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BEDE90243BCABB003BC12D /* WarCreatorViewController.swift */; };
 		90BEDE94243BCD7E003BC12D /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BEDE93243BCD7E003BC12D /* CustomButton.swift */; };
+		90BEDE9A243BCFEF003BC12D /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BEDE99243BCFEF003BC12D /* Color.swift */; };
+		90BEDE9C243BD400003BC12D /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BEDE9B243BD400003BC12D /* Font.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		90BEDE8E243BCA3B003BC12D /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		90BEDE90243BCABB003BC12D /* WarCreatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarCreatorViewController.swift; sourceTree = "<group>"; };
 		90BEDE93243BCD7E003BC12D /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		90BEDE99243BCFEF003BC12D /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		90BEDE9B243BD400003BC12D /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,7 @@
 		90BEDE71243BAAC7003BC12D /* SnapWar */ = {
 			isa = PBXGroup;
 			children = (
+				90BEDE98243BCFA1003BC12D /* Themes */,
 				90BEDE87243BB1BE003BC12D /* Components */,
 				90BEDE86243BB1B7003BC12D /* Models */,
 				90BEDE85243BB199003BC12D /* Screens */,
@@ -130,6 +135,15 @@
 				90BEDE93243BCD7E003BC12D /* CustomButton.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		90BEDE98243BCFA1003BC12D /* Themes */ = {
+			isa = PBXGroup;
+			children = (
+				90BEDE99243BCFEF003BC12D /* Color.swift */,
+				90BEDE9B243BD400003BC12D /* Font.swift */,
+			);
+			path = Themes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,9 +217,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90BEDE9C243BD400003BC12D /* Font.swift in Sources */,
 				90BEDE91243BCABB003BC12D /* WarCreatorViewController.swift in Sources */,
 				90BEDE75243BAAC7003BC12D /* ViewController.swift in Sources */,
 				90BEDE94243BCD7E003BC12D /* CustomButton.swift in Sources */,
+				90BEDE9A243BCFEF003BC12D /* Color.swift in Sources */,
 				90BEDE8F243BCA3B003BC12D /* DashboardViewController.swift in Sources */,
 				90BEDE8D243BC9FA003BC12D /* BattleViewController.swift in Sources */,
 				90BEDE73243BAAC7003BC12D /* AppDelegate.swift in Sources */,

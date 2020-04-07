@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  WarsListScreenViewController.swift
 //  SnapWar
 //
 //  Created by Pia Leung on 06/04/2020.
@@ -8,14 +8,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class DashboardViewController: UICollectionViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view?.backgroundColor = UIColor.red
     }
-
-
+    
+    
 }
-

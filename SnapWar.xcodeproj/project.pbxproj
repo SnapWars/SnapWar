@@ -69,7 +69,7 @@
 				90BEDE98243BCFA1003BC12D /* Themes */,
 				90BEDE87243BB1BE003BC12D /* Components */,
 				90BEDE86243BB1B7003BC12D /* Models */,
-				90BEDE85243BB199003BC12D /* Screens */,
+				90BEDE85243BB199003BC12D /* ViewControllers */,
 				90BEDE72243BAAC7003BC12D /* AppDelegate.swift */,
 				90BEDE74243BAAC7003BC12D /* ViewController.swift */,
 				90BEDE76243BAAC7003BC12D /* Main.storyboard */,
@@ -80,14 +80,14 @@
 			path = SnapWar;
 			sourceTree = "<group>";
 		};
-		90BEDE85243BB199003BC12D /* Screens */ = {
+		90BEDE85243BB199003BC12D /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				90BEDE8B243BC9B2003BC12D /* Battle */,
 				90BEDE8A243BC9A7003BC12D /* Dashboard */,
 				90BEDE89243BC950003BC12D /* WarCreator */,
 			);
-			path = Screens;
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		90BEDE86243BB1B7003BC12D /* Models */ = {

@@ -12,13 +12,20 @@ class PrimaryButton: UIButton {
     
     required init(label: String) {
         super.init(frame: .zero)
-        self.setTitle(label, for: .normal)
-        self.backgroundColor = Color.primary
-        self.setTitleColor(Color.white, for: .normal)
+        setup(label: label)
+        
     }
 
     required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        super.init(coder: aDecoder)
+        setup(label: "Primary Button")
+    }
+    
+    func setup(label: String) {
+        backgroundColor = Color.primary
+        setTitleColor(Color.white, for: .normal)
+        layer.cornerRadius = 25
+        setTitle(label, for: .normal)
     }
 }
 

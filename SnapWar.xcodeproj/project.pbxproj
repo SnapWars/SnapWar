@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9044C84E243D0D640054152B /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9044C84D243D0D640054152B /* AuthViewController.swift */; };
+		90BBDFB5243E6EBF00A02FE1 /* ColumnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BBDFB4243E6EBF00A02FE1 /* ColumnView.swift */; };
 		90BEDE73243BAAC7003BC12D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BEDE72243BAAC7003BC12D /* AppDelegate.swift */; };
 		90BEDE75243BAAC7003BC12D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BEDE74243BAAC7003BC12D /* ViewController.swift */; };
 		90BEDE78243BAAC7003BC12D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90BEDE76243BAAC7003BC12D /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		9044C84D243D0D640054152B /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		90BBDFB4243E6EBF00A02FE1 /* ColumnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColumnView.swift; sourceTree = "<group>"; };
 		90BEDE6F243BAAC7003BC12D /* SnapWar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapWar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90BEDE72243BAAC7003BC12D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		90BEDE74243BAAC7003BC12D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				90BEDE93243BCD7E003BC12D /* PrimaryButton.swift */,
+				90BBDFB4243E6EBF00A02FE1 /* ColumnView.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -190,6 +193,7 @@
 				90BEDE9C243BD400003BC12D /* Font.swift in Sources */,
 				90BEDE75243BAAC7003BC12D /* ViewController.swift in Sources */,
 				90BEDE94243BCD7E003BC12D /* PrimaryButton.swift in Sources */,
+				90BBDFB5243E6EBF00A02FE1 /* ColumnView.swift in Sources */,
 				90BEDE9A243BCFEF003BC12D /* Color.swift in Sources */,
 				9044C84E243D0D640054152B /* AuthViewController.swift in Sources */,
 				90BEDE73243BAAC7003BC12D /* AppDelegate.swift in Sources */,

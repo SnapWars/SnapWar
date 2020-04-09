@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Font {
+struct FontTypes {
     
     struct Family {
         let main = ""

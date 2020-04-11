@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  SnapWar
-//
-//  Created by Pia Leung on 06/04/2020.
-//  Copyright © 2020 stickerwar. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain
@@ -18,8 +10,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
         
-        let controller = ViewController()
-        window?.rootViewController = UINavigationController(rootViewController: controller )
+        window?.rootViewController = UINavigationController(rootViewController: MainViewController() )
         
         // Override point for customization after application launch.
         return true

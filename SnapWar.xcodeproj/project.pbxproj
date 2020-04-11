@@ -7,33 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5DC7CA6A24419E6100A4431E /* RouteType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC7CA6924419E6100A4431E /* RouteType.swift */; };
+		903CC74B243FBA0C00FA431D /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903CC74A243FBA0C00FA431D /* GalleryViewController.swift */; };
+		903CC74D243FBBB700FA431D /* CreateWarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903CC74C243FBBB700FA431D /* CreateWarViewController.swift */; };
+		903CC751243FC62900FA431D /* NavButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903CC750243FC62900FA431D /* NavButton.swift */; };
+		9044C84E243D0D640054152B /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9044C84D243D0D640054152B /* AuthViewController.swift */; };
+		90BBDFB5243E6EBF00A02FE1 /* StackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BBDFB4243E6EBF00A02FE1 /* StackView.swift */; };
 		90BEDE73243BAAC7003BC12D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BEDE72243BAAC7003BC12D /* AppDelegate.swift */; };
-		90BEDE75243BAAC7003BC12D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BEDE74243BAAC7003BC12D /* ViewController.swift */; };
+		90BEDE75243BAAC7003BC12D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BEDE74243BAAC7003BC12D /* MainViewController.swift */; };
 		90BEDE78243BAAC7003BC12D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90BEDE76243BAAC7003BC12D /* Main.storyboard */; };
 		90BEDE7A243BAAC9003BC12D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90BEDE79243BAAC9003BC12D /* Assets.xcassets */; };
 		90BEDE7D243BAAC9003BC12D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90BEDE7B243BAAC9003BC12D /* LaunchScreen.storyboard */; };
-		90BEDE8D243BC9FA003BC12D /* BattleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BEDE8C243BC9FA003BC12D /* BattleViewController.swift */; };
-		90BEDE8F243BCA3B003BC12D /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BEDE8E243BCA3B003BC12D /* DashboardViewController.swift */; };
-		90BEDE91243BCABB003BC12D /* WarCreatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BEDE90243BCABB003BC12D /* WarCreatorViewController.swift */; };
-		90BEDE94243BCD7E003BC12D /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BEDE93243BCD7E003BC12D /* CustomButton.swift */; };
-		90BEDE9A243BCFEF003BC12D /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BEDE99243BCFEF003BC12D /* Color.swift */; };
-		90BEDE9C243BD400003BC12D /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BEDE9B243BD400003BC12D /* Font.swift */; };
+		90BEDE9A243BCFEF003BC12D /* ColorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BEDE99243BCFEF003BC12D /* ColorType.swift */; };
+		90BEDE9C243BD400003BC12D /* FontType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BEDE9B243BD400003BC12D /* FontType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5DC7CA6924419E6100A4431E /* RouteType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteType.swift; sourceTree = "<group>"; };
+		903CC74A243FBA0C00FA431D /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
+		903CC74C243FBBB700FA431D /* CreateWarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateWarViewController.swift; sourceTree = "<group>"; };
+		903CC750243FC62900FA431D /* NavButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavButton.swift; sourceTree = "<group>"; };
+		9044C84D243D0D640054152B /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		90BBDFB4243E6EBF00A02FE1 /* StackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackView.swift; sourceTree = "<group>"; };
 		90BEDE6F243BAAC7003BC12D /* SnapWar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapWar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90BEDE72243BAAC7003BC12D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		90BEDE74243BAAC7003BC12D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		90BEDE74243BAAC7003BC12D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		90BEDE77243BAAC7003BC12D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		90BEDE79243BAAC9003BC12D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		90BEDE7C243BAAC9003BC12D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		90BEDE7E243BAAC9003BC12D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		90BEDE8C243BC9FA003BC12D /* BattleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleViewController.swift; sourceTree = "<group>"; };
-		90BEDE8E243BCA3B003BC12D /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
-		90BEDE90243BCABB003BC12D /* WarCreatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarCreatorViewController.swift; sourceTree = "<group>"; };
-		90BEDE93243BCD7E003BC12D /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
-		90BEDE99243BCFEF003BC12D /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
-		90BEDE9B243BD400003BC12D /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		90BEDE99243BCFEF003BC12D /* ColorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorType.swift; sourceTree = "<group>"; };
+		90BEDE9B243BD400003BC12D /* FontType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,16 +70,14 @@
 		90BEDE71243BAAC7003BC12D /* SnapWar */ = {
 			isa = PBXGroup;
 			children = (
-				90BEDE98243BCFA1003BC12D /* Themes */,
-				90BEDE87243BB1BE003BC12D /* Components */,
-				90BEDE86243BB1B7003BC12D /* Models */,
-				90BEDE85243BB199003BC12D /* ViewControllers */,
 				90BEDE72243BAAC7003BC12D /* AppDelegate.swift */,
-				90BEDE74243BAAC7003BC12D /* ViewController.swift */,
-				90BEDE76243BAAC7003BC12D /* Main.storyboard */,
 				90BEDE79243BAAC9003BC12D /* Assets.xcassets */,
-				90BEDE7B243BAAC9003BC12D /* LaunchScreen.storyboard */,
+				90BEDE87243BB1BE003BC12D /* Components */,
 				90BEDE7E243BAAC9003BC12D /* Info.plist */,
+				90BEDE7B243BAAC9003BC12D /* LaunchScreen.storyboard */,
+				90BEDE76243BAAC7003BC12D /* Main.storyboard */,
+				90BEDE98243BCFA1003BC12D /* Types */,
+				90BEDE85243BB199003BC12D /* ViewControllers */,
 			);
 			path = SnapWar;
 			sourceTree = "<group>";
@@ -83,18 +85,12 @@
 		90BEDE85243BB199003BC12D /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				90BEDE8B243BC9B2003BC12D /* Battle */,
-				90BEDE8A243BC9A7003BC12D /* Dashboard */,
-				90BEDE89243BC950003BC12D /* WarCreator */,
+				9044C84D243D0D640054152B /* AuthViewController.swift */,
+				903CC74C243FBBB700FA431D /* CreateWarViewController.swift */,
+				903CC74A243FBA0C00FA431D /* GalleryViewController.swift */,
+				90BEDE74243BAAC7003BC12D /* MainViewController.swift */,
 			);
 			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		90BEDE86243BB1B7003BC12D /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		90BEDE87243BB1BE003BC12D /* Components */ = {
@@ -105,45 +101,23 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
-		90BEDE89243BC950003BC12D /* WarCreator */ = {
-			isa = PBXGroup;
-			children = (
-				90BEDE90243BCABB003BC12D /* WarCreatorViewController.swift */,
-			);
-			path = WarCreator;
-			sourceTree = "<group>";
-		};
-		90BEDE8A243BC9A7003BC12D /* Dashboard */ = {
-			isa = PBXGroup;
-			children = (
-				90BEDE8E243BCA3B003BC12D /* DashboardViewController.swift */,
-			);
-			path = Dashboard;
-			sourceTree = "<group>";
-		};
-		90BEDE8B243BC9B2003BC12D /* Battle */ = {
-			isa = PBXGroup;
-			children = (
-				90BEDE8C243BC9FA003BC12D /* BattleViewController.swift */,
-			);
-			path = Battle;
-			sourceTree = "<group>";
-		};
 		90BEDE92243BCD69003BC12D /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				90BEDE93243BCD7E003BC12D /* CustomButton.swift */,
+				903CC750243FC62900FA431D /* NavButton.swift */,
+				90BBDFB4243E6EBF00A02FE1 /* StackView.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
 		};
-		90BEDE98243BCFA1003BC12D /* Themes */ = {
+		90BEDE98243BCFA1003BC12D /* Types */ = {
 			isa = PBXGroup;
 			children = (
-				90BEDE99243BCFEF003BC12D /* Color.swift */,
-				90BEDE9B243BD400003BC12D /* Font.swift */,
+				90BEDE99243BCFEF003BC12D /* ColorType.swift */,
+				90BEDE9B243BD400003BC12D /* FontType.swift */,
+				5DC7CA6924419E6100A4431E /* RouteType.swift */,
 			);
-			path = Themes;
+			path = Types;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,13 +191,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90BEDE9C243BD400003BC12D /* Font.swift in Sources */,
-				90BEDE91243BCABB003BC12D /* WarCreatorViewController.swift in Sources */,
-				90BEDE75243BAAC7003BC12D /* ViewController.swift in Sources */,
-				90BEDE94243BCD7E003BC12D /* CustomButton.swift in Sources */,
-				90BEDE9A243BCFEF003BC12D /* Color.swift in Sources */,
-				90BEDE8F243BCA3B003BC12D /* DashboardViewController.swift in Sources */,
-				90BEDE8D243BC9FA003BC12D /* BattleViewController.swift in Sources */,
+				90BEDE9C243BD400003BC12D /* FontType.swift in Sources */,
+				5DC7CA6A24419E6100A4431E /* RouteType.swift in Sources */,
+				903CC74D243FBBB700FA431D /* CreateWarViewController.swift in Sources */,
+				90BEDE75243BAAC7003BC12D /* MainViewController.swift in Sources */,
+				90BBDFB5243E6EBF00A02FE1 /* StackView.swift in Sources */,
+				90BEDE9A243BCFEF003BC12D /* ColorType.swift in Sources */,
+				903CC74B243FBA0C00FA431D /* GalleryViewController.swift in Sources */,
+				9044C84E243D0D640054152B /* AuthViewController.swift in Sources */,
+				903CC751243FC62900FA431D /* NavButton.swift in Sources */,
 				90BEDE73243BAAC7003BC12D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

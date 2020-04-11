@@ -20,6 +20,7 @@
 		90BEDE7D243BAAC9003BC12D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90BEDE7B243BAAC9003BC12D /* LaunchScreen.storyboard */; };
 		90BEDE9A243BCFEF003BC12D /* ColorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BEDE99243BCFEF003BC12D /* ColorType.swift */; };
 		90BEDE9C243BD400003BC12D /* FontType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BEDE9B243BD400003BC12D /* FontType.swift */; };
+		90EF0A892442467E006433E5 /* MainNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EF0A882442467E006433E5 /* MainNavViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		90BEDE7E243BAAC9003BC12D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		90BEDE99243BCFEF003BC12D /* ColorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorType.swift; sourceTree = "<group>"; };
 		90BEDE9B243BD400003BC12D /* FontType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontType.swift; sourceTree = "<group>"; };
+		90EF0A882442467E006433E5 /* MainNavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +56,8 @@
 		90BEDE66243BAAC7003BC12D = {
 			isa = PBXGroup;
 			children = (
-				90BEDE71243BAAC7003BC12D /* SnapWar */,
 				90BEDE70243BAAC7003BC12D /* Products */,
+				90BEDE71243BAAC7003BC12D /* SnapWar */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,6 +91,7 @@
 				903CC74C243FBBB700FA431D /* CreateWarViewController.swift */,
 				903CC74A243FBA0C00FA431D /* GalleryViewController.swift */,
 				90BEDE74243BAAC7003BC12D /* MainViewController.swift */,
+				90EF0A882442467E006433E5 /* MainNavViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 				5DC7CA6A24419E6100A4431E /* RouteType.swift in Sources */,
 				903CC74D243FBBB700FA431D /* CreateWarViewController.swift in Sources */,
 				90BEDE75243BAAC7003BC12D /* MainViewController.swift in Sources */,
+				90EF0A892442467E006433E5 /* MainNavViewController.swift in Sources */,
 				90BBDFB5243E6EBF00A02FE1 /* StackView.swift in Sources */,
 				90BEDE9A243BCFEF003BC12D /* ColorType.swift in Sources */,
 				903CC74B243FBA0C00FA431D /* GalleryViewController.swift in Sources */,

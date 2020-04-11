@@ -9,9 +9,6 @@
 import UIKit
 
 class NavButton: UIButton {
-
-    var controller: UIViewController?
-
     required init(label: String) {
         super.init(frame: .zero)
         setupStyles()
@@ -27,12 +24,12 @@ class NavButton: UIButton {
     }
 
     func setupStyles() {
-        backgroundColor = ColorTypes.primary
-        setTitleColor(ColorTypes.white, for: .normal)
+        backgroundColor = ColorType.primary
+        setTitleColor(ColorType.white, for: .normal)
 
     }
 
-    @IBAction func onClick() {
+    func onClick() {
 
 
     }

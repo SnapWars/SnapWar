@@ -12,9 +12,9 @@
 		903CC74D243FBBB700FA431D /* CreateWarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903CC74C243FBBB700FA431D /* CreateWarViewController.swift */; };
 		903CC751243FC62900FA431D /* NavButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903CC750243FC62900FA431D /* NavButton.swift */; };
 		9044C84E243D0D640054152B /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9044C84D243D0D640054152B /* AuthViewController.swift */; };
-		90BBDFB5243E6EBF00A02FE1 /* ColumnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BBDFB4243E6EBF00A02FE1 /* ColumnView.swift */; };
+		90BBDFB5243E6EBF00A02FE1 /* StackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BBDFB4243E6EBF00A02FE1 /* StackView.swift */; };
 		90BEDE73243BAAC7003BC12D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BEDE72243BAAC7003BC12D /* AppDelegate.swift */; };
-		90BEDE75243BAAC7003BC12D /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BEDE74243BAAC7003BC12D /* MenuViewController.swift */; };
+		90BEDE75243BAAC7003BC12D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BEDE74243BAAC7003BC12D /* MainViewController.swift */; };
 		90BEDE78243BAAC7003BC12D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90BEDE76243BAAC7003BC12D /* Main.storyboard */; };
 		90BEDE7A243BAAC9003BC12D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90BEDE79243BAAC9003BC12D /* Assets.xcassets */; };
 		90BEDE7D243BAAC9003BC12D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90BEDE7B243BAAC9003BC12D /* LaunchScreen.storyboard */; };
@@ -28,10 +28,10 @@
 		903CC74C243FBBB700FA431D /* CreateWarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateWarViewController.swift; sourceTree = "<group>"; };
 		903CC750243FC62900FA431D /* NavButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavButton.swift; sourceTree = "<group>"; };
 		9044C84D243D0D640054152B /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
-		90BBDFB4243E6EBF00A02FE1 /* ColumnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColumnView.swift; sourceTree = "<group>"; };
+		90BBDFB4243E6EBF00A02FE1 /* StackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackView.swift; sourceTree = "<group>"; };
 		90BEDE6F243BAAC7003BC12D /* SnapWar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapWar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90BEDE72243BAAC7003BC12D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		90BEDE74243BAAC7003BC12D /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		90BEDE74243BAAC7003BC12D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		90BEDE77243BAAC7003BC12D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		90BEDE79243BAAC9003BC12D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		90BEDE7C243BAAC9003BC12D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -70,15 +70,14 @@
 		90BEDE71243BAAC7003BC12D /* SnapWar */ = {
 			isa = PBXGroup;
 			children = (
-				90BEDE98243BCFA1003BC12D /* Types */,
-				90BEDE87243BB1BE003BC12D /* Components */,
-				90BEDE86243BB1B7003BC12D /* Models */,
-				90BEDE85243BB199003BC12D /* ViewControllers */,
 				90BEDE72243BAAC7003BC12D /* AppDelegate.swift */,
-				90BEDE76243BAAC7003BC12D /* Main.storyboard */,
 				90BEDE79243BAAC9003BC12D /* Assets.xcassets */,
-				90BEDE7B243BAAC9003BC12D /* LaunchScreen.storyboard */,
+				90BEDE87243BB1BE003BC12D /* Components */,
 				90BEDE7E243BAAC9003BC12D /* Info.plist */,
+				90BEDE7B243BAAC9003BC12D /* LaunchScreen.storyboard */,
+				90BEDE76243BAAC7003BC12D /* Main.storyboard */,
+				90BEDE98243BCFA1003BC12D /* Types */,
+				90BEDE85243BB199003BC12D /* ViewControllers */,
 			);
 			path = SnapWar;
 			sourceTree = "<group>";
@@ -89,16 +88,9 @@
 				9044C84D243D0D640054152B /* AuthViewController.swift */,
 				903CC74C243FBBB700FA431D /* CreateWarViewController.swift */,
 				903CC74A243FBA0C00FA431D /* GalleryViewController.swift */,
-				90BEDE74243BAAC7003BC12D /* MenuViewController.swift */,
+				90BEDE74243BAAC7003BC12D /* MainViewController.swift */,
 			);
 			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		90BEDE86243BB1B7003BC12D /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		90BEDE87243BB1BE003BC12D /* Components */ = {
@@ -112,8 +104,8 @@
 		90BEDE92243BCD69003BC12D /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				90BBDFB4243E6EBF00A02FE1 /* ColumnView.swift */,
 				903CC750243FC62900FA431D /* NavButton.swift */,
+				90BBDFB4243E6EBF00A02FE1 /* StackView.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -202,8 +194,8 @@
 				90BEDE9C243BD400003BC12D /* FontType.swift in Sources */,
 				5DC7CA6A24419E6100A4431E /* RouteType.swift in Sources */,
 				903CC74D243FBBB700FA431D /* CreateWarViewController.swift in Sources */,
-				90BEDE75243BAAC7003BC12D /* MenuViewController.swift in Sources */,
-				90BBDFB5243E6EBF00A02FE1 /* ColumnView.swift in Sources */,
+				90BEDE75243BAAC7003BC12D /* MainViewController.swift in Sources */,
+				90BBDFB5243E6EBF00A02FE1 /* StackView.swift in Sources */,
 				90BEDE9A243BCFEF003BC12D /* ColorType.swift in Sources */,
 				903CC74B243FBA0C00FA431D /* GalleryViewController.swift in Sources */,
 				9044C84E243D0D640054152B /* AuthViewController.swift in Sources */,

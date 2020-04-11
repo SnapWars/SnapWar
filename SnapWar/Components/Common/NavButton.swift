@@ -1,11 +1,3 @@
-//
-//  NavButton.swift
-//  SnapWar
-//
-//  Created by Pia Leung on 09/04/2020.
-//  Copyright © 2020 stickerwar. All rights reserved.
-//
-
 import UIKit
 
 class NavButton: UIButton {
@@ -26,11 +18,6 @@ class NavButton: UIButton {
     func setupStyles() {
         backgroundColor = ColorType.primary
         setTitleColor(ColorType.white, for: .normal)
-
-    }
-
-    func onClick() {
-
 
     }
 }

@@ -1,16 +1,6 @@
-//
-//  ViewController.swift
-//  SnapWar
-//
-//  Created by Pia Leung on 06/04/2020.
-//  Copyright © 2020 stickerwar. All rights reserved.
-//
-
 import UIKit
 
-class ViewController: UIViewController {
-    var routeToSelector: [RouteType: Selector]?
-    
+class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,7 +8,7 @@ class ViewController: UIViewController {
     }
     
     fileprivate func setup() {
-        self.routeToSelector = [
+        let routeToSelector = [
             RouteType.auth: #selector(toAuthController),
             RouteType.gallery: #selector(toGalleryController),
             RouteType.createWar: #selector(toCreateWarController),
@@ -26,7 +16,7 @@ class ViewController: UIViewController {
         
         view?.backgroundColor = ColorType.black
         
-        let column = UIStackView();
+        let column = UIStackView()
         view.addSubview(column)
         
         column.axis = .vertical
@@ -36,20 +26,18 @@ class ViewController: UIViewController {
         
         column.backgroundColor = ColorType.primary
         column.translatesAutoresizingMaskIntoConstraints = false
-        column.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true;
-        column.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor).isActive = true;
-        column.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor).isActive = true;
-        column.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true;
+        column.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
+        column.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor).isActive = true
+        column.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor).isActive = true
+        column.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
         
 
-        if let routeToSelector = self.routeToSelector {
-            for (routeType, selector) in routeToSelector {
-                let button = NavButton(label: routeType.rawValue)
+        for (routeType, selector) in routeToSelector {
+            let button = NavButton(label: routeType.rawValue)
 
-                button.addTarget(self, action:  selector, for: .touchUpInside)
+            button.addTarget(self, action: selector, for: .touchUpInside)
 
-                column.addArrangedSubview(button)
-            }
+            column.addArrangedSubview(button)
         }
     }
     

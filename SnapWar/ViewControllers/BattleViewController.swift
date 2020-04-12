@@ -1,7 +1,7 @@
 import UIKit
 
 class BattleViewController: UIViewController {
-    let fullScreenImageView = SWFullscreenImageView(named: "test-image-4")
+    let fullScreenImageView = SWFullscreenImageView(named: "test-image-2")
     
     override func viewDidLoad() {
         super.viewDidLoad()

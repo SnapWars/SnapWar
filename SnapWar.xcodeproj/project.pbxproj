@@ -10,11 +10,10 @@
 		5DC7CA6A24419E6100A4431E /* RouteType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC7CA6924419E6100A4431E /* RouteType.swift */; };
 		903CC74B243FBA0C00FA431D /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903CC74A243FBA0C00FA431D /* GalleryViewController.swift */; };
 		903CC74D243FBBB700FA431D /* CreateWarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903CC74C243FBBB700FA431D /* CreateWarViewController.swift */; };
-		903CC751243FC62900FA431D /* NavButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903CC750243FC62900FA431D /* NavButton.swift */; };
+		903CC751243FC62900FA431D /* SWNavButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903CC750243FC62900FA431D /* SWNavButton.swift */; };
 		9044C84E243D0D640054152B /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9044C84D243D0D640054152B /* AuthViewController.swift */; };
 		90B977E02443A24600ADBF17 /* BattleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B977DF2443A24600ADBF17 /* BattleViewController.swift */; };
 		90B977E22443A55100ADBF17 /* SWFullscreenImageVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B977E12443A55100ADBF17 /* SWFullscreenImageVIew.swift */; };
-		90BBDFB5243E6EBF00A02FE1 /* StackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BBDFB4243E6EBF00A02FE1 /* StackView.swift */; };
 		90BEDE73243BAAC7003BC12D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BEDE72243BAAC7003BC12D /* AppDelegate.swift */; };
 		90BEDE75243BAAC7003BC12D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BEDE74243BAAC7003BC12D /* MainViewController.swift */; };
 		90BEDE78243BAAC7003BC12D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90BEDE76243BAAC7003BC12D /* Main.storyboard */; };
@@ -29,11 +28,10 @@
 		5DC7CA6924419E6100A4431E /* RouteType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteType.swift; sourceTree = "<group>"; };
 		903CC74A243FBA0C00FA431D /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
 		903CC74C243FBBB700FA431D /* CreateWarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateWarViewController.swift; sourceTree = "<group>"; };
-		903CC750243FC62900FA431D /* NavButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavButton.swift; sourceTree = "<group>"; };
+		903CC750243FC62900FA431D /* SWNavButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWNavButton.swift; sourceTree = "<group>"; };
 		9044C84D243D0D640054152B /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		90B977DF2443A24600ADBF17 /* BattleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleViewController.swift; sourceTree = "<group>"; };
 		90B977E12443A55100ADBF17 /* SWFullscreenImageVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWFullscreenImageVIew.swift; sourceTree = "<group>"; };
-		90BBDFB4243E6EBF00A02FE1 /* StackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackView.swift; sourceTree = "<group>"; };
 		90BEDE6F243BAAC7003BC12D /* SnapWar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapWar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90BEDE72243BAAC7003BC12D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		90BEDE74243BAAC7003BC12D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -112,8 +110,7 @@
 		90BEDE92243BCD69003BC12D /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				903CC750243FC62900FA431D /* NavButton.swift */,
-				90BBDFB4243E6EBF00A02FE1 /* StackView.swift */,
+				903CC750243FC62900FA431D /* SWNavButton.swift */,
 				90B977E12443A55100ADBF17 /* SWFullscreenImageVIew.swift */,
 			);
 			path = Common;
@@ -206,12 +203,11 @@
 				90B977E22443A55100ADBF17 /* SWFullscreenImageVIew.swift in Sources */,
 				90BEDE75243BAAC7003BC12D /* MainViewController.swift in Sources */,
 				90EF0A892442467E006433E5 /* MainNavViewController.swift in Sources */,
-				90BBDFB5243E6EBF00A02FE1 /* StackView.swift in Sources */,
 				90BEDE9A243BCFEF003BC12D /* ColorType.swift in Sources */,
 				90B977E02443A24600ADBF17 /* BattleViewController.swift in Sources */,
 				903CC74B243FBA0C00FA431D /* GalleryViewController.swift in Sources */,
 				9044C84E243D0D640054152B /* AuthViewController.swift in Sources */,
-				903CC751243FC62900FA431D /* NavButton.swift in Sources */,
+				903CC751243FC62900FA431D /* SWNavButton.swift in Sources */,
 				90BEDE73243BAAC7003BC12D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

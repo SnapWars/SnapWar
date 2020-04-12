@@ -33,7 +33,7 @@ class MainViewController: UIViewController {
         
 
         for (routeType, selector) in routeToSelector {
-            let button = NavButton(label: routeType.rawValue)
+            let button = SWNavButton(label: routeType.rawValue)
 
             button.addTarget(self, action: selector, for: .touchUpInside)
 

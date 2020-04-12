@@ -22,11 +22,15 @@ class MainNavViewController: UITabBarController {
         let createWarController = CreateWarViewController()
         createWarController.tabBarItem = UITabBarItem(tabBarSystemItem: .bookmarks, tag: 3)
         
+        let battleViewController = BattleViewController()
+        battleViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 4)
+        
         viewControllers = [
             mainController,
             authController,
             galleryController,
-            createWarController
+            createWarController,
+            battleViewController
         ]
     }
 }

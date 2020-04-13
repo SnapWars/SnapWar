@@ -1,6 +1,6 @@
 import Foundation
 
-struct FontType {
+struct SWFontType {
     
     struct Family {
         let main = ""

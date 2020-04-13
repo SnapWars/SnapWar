@@ -1,7 +1,7 @@
 import UIKit
 
 
-class MainNavViewController: UITabBarController {
+class SWMainNavViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -10,19 +10,19 @@ class MainNavViewController: UITabBarController {
     
     fileprivate func setupTabs() {
 
-        let mainController = MainViewController()
+        let mainController = SWMainViewController()
         mainController.tabBarItem = UITabBarItem(tabBarSystemItem: .contacts, tag: 0)
         
-        let authController = AuthViewController()
+        let authController = SWAuthViewController()
         authController.tabBarItem = UITabBarItem(tabBarSystemItem: .bookmarks, tag: 1)
         
-        let galleryController = GalleryViewController()
+        let galleryController = SWGalleryViewController()
         galleryController.tabBarItem = UITabBarItem(tabBarSystemItem: .downloads, tag: 2)
         
-        let createWarController = CreateWarViewController()
+        let createWarController = SWCreateWarViewController()
         createWarController.tabBarItem = UITabBarItem(tabBarSystemItem: .bookmarks, tag: 3)
         
-        let battleViewController = BattleViewController()
+        let battleViewController = SWBattleViewController()
         battleViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 4)
         
         viewControllers = [

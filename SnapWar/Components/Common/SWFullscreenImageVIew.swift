@@ -19,7 +19,7 @@ class SWFullscreenImageView: UIView {
     }
     
     func setup() {
-        backgroundColor = ColorType.black
+        backgroundColor = SWColorType.black
         fitToView()
         addSubview(imageView)
 

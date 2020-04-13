@@ -1,10 +1,10 @@
 import UIKit
 
-class GalleryViewController: UIViewController {
+class SWAuthViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view?.backgroundColor = UIColor.yellow
+        view?.backgroundColor = UIColor.green
     }
 }

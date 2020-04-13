@@ -1,6 +1,6 @@
 import UIKit
 
-class BattleViewController: UIViewController {
+class SWBattleViewController: UIViewController {
     let fullScreenImageView = SWFullscreenImageView(named: "test-image-2")
     
     override func viewDidLoad() {

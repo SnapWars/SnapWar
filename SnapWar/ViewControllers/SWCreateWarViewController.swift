@@ -1,6 +1,6 @@
 import UIKit
 
-class CreateWarViewController: UIViewController {
+class SWCreateWarViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         

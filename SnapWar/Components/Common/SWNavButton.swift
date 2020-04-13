@@ -16,8 +16,8 @@ class SWNavButton: UIButton {
     }
 
     func setupStyles() {
-        backgroundColor = ColorType.primary
-        setTitleColor(ColorType.white, for: .normal)
+        backgroundColor = SWColorType.primary
+        setTitleColor(SWColorType.white, for: .normal)
 
     }
 }

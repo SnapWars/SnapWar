@@ -1,6 +1,6 @@
 import UIKit
 
-class MainViewController: UIViewController {
+class SWMainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -9,12 +9,12 @@ class MainViewController: UIViewController {
     
     fileprivate func setup() {
         let routeToSelector = [
-            RouteType.auth: #selector(toAuthController),
-            RouteType.gallery: #selector(toGalleryController),
-            RouteType.createWar: #selector(toCreateWarController),
+            SWRouteType.auth: #selector(toAuthController),
+            SWRouteType.gallery: #selector(toGalleryController),
+            SWRouteType.createWar: #selector(toCreateWarController),
         ]
         
-        view?.backgroundColor = ColorType.black
+        view?.backgroundColor = SWColorType.black
         
         let column = UIStackView()
         view.addSubview(column)
@@ -24,7 +24,7 @@ class MainViewController: UIViewController {
         column.alignment = .fill
         column.spacing = 5
         
-        column.backgroundColor = ColorType.primary
+        column.backgroundColor = SWColorType.primary
         column.translatesAutoresizingMaskIntoConstraints = false
         column.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
         column.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor).isActive = true
@@ -43,17 +43,17 @@ class MainViewController: UIViewController {
     
     @objc
     fileprivate func toAuthController() {
-        self.navigationController?.pushViewController(AuthViewController(), animated: true)
+        self.navigationController?.pushViewController(SWAuthViewController(), animated: true)
     }
     
     @objc
     fileprivate func toGalleryController() {
-        self.navigationController?.pushViewController(GalleryViewController(), animated: true)
+        self.navigationController?.pushViewController(SWGalleryViewController(), animated: true)
     }
 
     @objc
     fileprivate func toCreateWarController() {
-        self.navigationController?.pushViewController(CreateWarViewController(), animated: true)
+        self.navigationController?.pushViewController(SWCreateWarViewController(), animated: true)
     }
 }
 

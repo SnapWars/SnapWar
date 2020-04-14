@@ -22,6 +22,7 @@
 		90BEDE9A243BCFEF003BC12D /* SWColorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BEDE99243BCFEF003BC12D /* SWColorType.swift */; };
 		90BEDE9C243BD400003BC12D /* SWFontType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BEDE9B243BD400003BC12D /* SWFontType.swift */; };
 		90EF0A892442467E006433E5 /* SWMainNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EF0A882442467E006433E5 /* SWMainNavViewController.swift */; };
+		90EF3BA724465DD200F37F9A /* SWImagePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EF3BA624465DD200F37F9A /* SWImagePreview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		90BEDE99243BCFEF003BC12D /* SWColorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWColorType.swift; sourceTree = "<group>"; };
 		90BEDE9B243BD400003BC12D /* SWFontType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWFontType.swift; sourceTree = "<group>"; };
 		90EF0A882442467E006433E5 /* SWMainNavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWMainNavViewController.swift; sourceTree = "<group>"; };
+		90EF3BA624465DD200F37F9A /* SWImagePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWImagePreview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				90BEDE92243BCD69003BC12D /* Common */,
+				90EF3BA624465DD200F37F9A /* SWImagePreview.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				90BEDE9C243BD400003BC12D /* SWFontType.swift in Sources */,
+				90EF3BA724465DD200F37F9A /* SWImagePreview.swift in Sources */,
 				5DC7CA6A24419E6100A4431E /* SWRouteType.swift in Sources */,
 				903CC74D243FBBB700FA431D /* SWCreateWarViewController.swift in Sources */,
 				90B977E22443A55100ADBF17 /* SWFullscreenImageView.swift in Sources */,

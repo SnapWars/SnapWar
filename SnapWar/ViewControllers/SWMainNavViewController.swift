@@ -26,11 +26,12 @@ class SWMainNavViewController: UITabBarController {
         battleViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 4)
         
         viewControllers = [
+            battleViewController,
             mainController,
             authController,
             galleryController,
             createWarController,
-            battleViewController
+            
         ]
     }
 }

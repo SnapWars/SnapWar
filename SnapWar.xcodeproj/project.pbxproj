@@ -59,6 +59,8 @@
 		5DC7CA712446F4CF00A4431E /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
 		5DC7CA742446F4CF00A4431E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		5DC7CA762446F4CF00A4431E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DC7CA7E2446F58D00A4431E /* SnapWarShareExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SnapWarShareExtension.entitlements; sourceTree = "<group>"; };
+		5DC7CA7F2446F59E00A4431E /* SnapWar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SnapWar.entitlements; sourceTree = "<group>"; };
 		903CC74A243FBA0C00FA431D /* SWGalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWGalleryViewController.swift; sourceTree = "<group>"; };
 		903CC74C243FBBB700FA431D /* SWCreateWarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWCreateWarViewController.swift; sourceTree = "<group>"; };
 		903CC750243FC62900FA431D /* SWNavButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWNavButton.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 		5DC7CA702446F4CF00A4431E /* SnapWarShareExtension */ = {
 			isa = PBXGroup;
 			children = (
+				5DC7CA7E2446F58D00A4431E /* SnapWarShareExtension.entitlements */,
 				5DC7CA712446F4CF00A4431E /* ShareViewController.swift */,
 				5DC7CA732446F4CF00A4431E /* MainInterface.storyboard */,
 				5DC7CA762446F4CF00A4431E /* Info.plist */,
@@ -137,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				90ADFA43244B36CF00636DF2 /* Extensions */,
+				5DC7CA7F2446F59E00A4431E /* SnapWar.entitlements */,
 				90BEDE72243BAAC7003BC12D /* AppDelegate.swift */,
 				90BEDE79243BAAC9003BC12D /* Assets.xcassets */,
 				90BEDE87243BB1BE003BC12D /* Components */,
@@ -358,8 +362,9 @@
 		5DC7CA7B2446F4CF00A4431E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SnapWarShareExtension/SnapWarShareExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = C97KWWDNMP;
+				DEVELOPMENT_TEAM = R6552SUGAZ;
 				INFOPLIST_FILE = SnapWarShareExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -378,8 +383,9 @@
 		5DC7CA7C2446F4CF00A4431E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SnapWarShareExtension/SnapWarShareExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = C97KWWDNMP;
+				DEVELOPMENT_TEAM = R6552SUGAZ;
 				INFOPLIST_FILE = SnapWarShareExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -516,8 +522,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SnapWar/SnapWar.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = C97KWWDNMP;
+				DEVELOPMENT_TEAM = R6552SUGAZ;
 				INFOPLIST_FILE = SnapWar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -535,8 +542,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SnapWar/SnapWar.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = C97KWWDNMP;
+				DEVELOPMENT_TEAM = R6552SUGAZ;
 				INFOPLIST_FILE = SnapWar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

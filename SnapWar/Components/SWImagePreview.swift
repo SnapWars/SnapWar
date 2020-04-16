@@ -1,7 +1,9 @@
 import UIKit
 
 class SWImagePreview: UIImageView {
-    var named: String
+    let named: String
+    var isActive: Bool = false
+    var fullscreenView: SWFullscreenImageView
     
     required init(named: String, frame: CGRect) {
         self.named = named
@@ -9,8 +11,10 @@ class SWImagePreview: UIImageView {
         guard let image = UIImage(named: named) else {
             fatalError("Image name '\(named)' not found")
         }
+        
+        fullscreenView = SWFullscreenImageView(named: named)
 
-            super.init(image: image)
+        super.init(image: image)
         
         setup()
     }
@@ -23,5 +27,6 @@ class SWImagePreview: UIImageView {
         clipsToBounds = true
         backgroundColor = SWColorType.black
         contentMode = .scaleAspectFill
+        
     }
 }

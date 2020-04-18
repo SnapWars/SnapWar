@@ -2,7 +2,6 @@ import UIKit
 
 class SWImagePreview: UIImageView {
     var named: String
-    var isActive: Bool = false
     
     required init(named: String, frame: CGRect) {
         self.named = named

@@ -15,7 +15,6 @@
 		908F3953244B7CA800D619B2 /* SWFullScreenImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908F3952244B7CA800D619B2 /* SWFullScreenImageViewController.swift */; };
 		90ADFA42244B365A00636DF2 /* UIWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90ADFA41244B365A00636DF2 /* UIWindow.swift */; };
 		90B977E02443A24600ADBF17 /* SWBattleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B977DF2443A24600ADBF17 /* SWBattleViewController.swift */; };
-		90B977E22443A55100ADBF17 /* SWFullscreenImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B977E12443A55100ADBF17 /* SWFullscreenImageView.swift */; };
 		90BEDE73243BAAC7003BC12D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BEDE72243BAAC7003BC12D /* AppDelegate.swift */; };
 		90BEDE75243BAAC7003BC12D /* SWMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BEDE74243BAAC7003BC12D /* SWMainViewController.swift */; };
 		90BEDE78243BAAC7003BC12D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90BEDE76243BAAC7003BC12D /* Main.storyboard */; };
@@ -36,7 +35,6 @@
 		908F3952244B7CA800D619B2 /* SWFullScreenImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWFullScreenImageViewController.swift; sourceTree = "<group>"; };
 		90ADFA41244B365A00636DF2 /* UIWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWindow.swift; sourceTree = "<group>"; };
 		90B977DF2443A24600ADBF17 /* SWBattleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWBattleViewController.swift; sourceTree = "<group>"; };
-		90B977E12443A55100ADBF17 /* SWFullscreenImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWFullscreenImageView.swift; sourceTree = "<group>"; };
 		90BEDE6F243BAAC7003BC12D /* SnapWar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapWar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90BEDE72243BAAC7003BC12D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		90BEDE74243BAAC7003BC12D /* SWMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWMainViewController.swift; sourceTree = "<group>"; };
@@ -128,7 +126,6 @@
 			isa = PBXGroup;
 			children = (
 				903CC750243FC62900FA431D /* SWNavButton.swift */,
-				90B977E12443A55100ADBF17 /* SWFullscreenImageView.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -219,7 +216,6 @@
 				908F3953244B7CA800D619B2 /* SWFullScreenImageViewController.swift in Sources */,
 				5DC7CA6A24419E6100A4431E /* SWRouteType.swift in Sources */,
 				903CC74D243FBBB700FA431D /* SWCreateWarViewController.swift in Sources */,
-				90B977E22443A55100ADBF17 /* SWFullscreenImageView.swift in Sources */,
 				90BEDE75243BAAC7003BC12D /* SWMainViewController.swift in Sources */,
 				90EF0A892442467E006433E5 /* SWMainNavViewController.swift in Sources */,
 				90ADFA42244B365A00636DF2 /* UIWindow.swift in Sources */,

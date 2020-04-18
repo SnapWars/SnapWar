@@ -1,7 +1,7 @@
 import UIKit
 
 class SWImagePreview: UIImageView {
-    let named: String
+    var named: String
     var isActive: Bool = false
     
     required init(named: String, frame: CGRect) {

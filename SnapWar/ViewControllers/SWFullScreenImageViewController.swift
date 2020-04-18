@@ -33,5 +33,17 @@ class SWFullscreenImageViewController: UIViewController {
         imageView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
         
         imageView.contentMode = .scaleAspectFit
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(self.handleTap))
+        imageView.addGestureRecognizer(tap)
+        imageView.isUserInteractionEnabled = true
+    }
+    
+    @objc func handleTap(sender: UITapGestureRecognizer) {
+        if(sender.state != .ended) {
+            return
+        }
+        
+        self.navigationController?.popViewController(animated: true)
     }
 }

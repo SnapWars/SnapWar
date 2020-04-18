@@ -1,9 +1,8 @@
 import UIKit
 
 class SWBattleViewController: UIViewController {
-    let fullScreenImageView = SWFullscreenImageView(named: "test-image-4")
     let previewContainer = UIStackView()
-    var isFullscreenViewActive = false
+    let selectedImageName: String = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,18 +29,18 @@ class SWBattleViewController: UIViewController {
         previewContainer.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor).isActive = true
         previewContainer.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
 
-
-
         for name in imageNames {
             let preview = SWImagePreview(named: name, frame: .zero)
+            
+            let tap = UITapGestureRecognizer(target: self, action: #selector(self.handleTap))
+            preview.addGestureRecognizer(tap)
+            preview.isUserInteractionEnabled = true
+            
             previewContainer.addArrangedSubview(preview)
-
         }
-
     }
 
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
-        fullScreenImageView.handleResize()
 
         if(UIWindow.isLandscape) {
              previewContainer.axis = .horizontal
@@ -50,20 +49,14 @@ class SWBattleViewController: UIViewController {
         }
     }
     @objc func handleTap(sender: UITapGestureRecognizer) {
-        print("tapped!")
         if(sender.state != .ended) {
             return
         }
-
-        if(isFullscreenViewActive) {
-            isFullscreenViewActive = false
-        } else {
-            isFullscreenViewActive = true
-            let fullscreenImageView = SWFullscreenImageView(named: "test-image-4")
-
-            view.addSubview(fullscreenImageView)
-        }
-
+        
+        let preview = sender.view as! SWImagePreview
+        
+        let fullscreenImageView = SWFullscreenImageViewController(named: preview.named)
+        self.navigationController?.pushViewController(fullscreenImageView, animated: true)
     }
 }
 

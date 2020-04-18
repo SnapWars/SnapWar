@@ -31,7 +31,6 @@ class SWMainNavViewController: UITabBarController {
             authController,
             galleryController,
             createWarController,
-            
         ]
     }
 }

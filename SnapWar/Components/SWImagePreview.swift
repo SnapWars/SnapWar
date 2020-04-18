@@ -10,7 +10,7 @@ class SWImagePreview: UIImageView {
             fatalError("Image name '\(named)' not found")
         }
 
-            super.init(image: image)
+        super.init(image: image)
         
         setup()
     }

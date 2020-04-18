@@ -2,8 +2,7 @@ import UIKit
 
 class SWBattleViewController: UIViewController {
     let previewContainer = UIStackView()
-    let selectedImageName: String = ""
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

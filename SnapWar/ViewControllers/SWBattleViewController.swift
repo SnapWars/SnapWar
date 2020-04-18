@@ -47,12 +47,16 @@ class SWBattleViewController: UIViewController {
             previewContainer.axis = .vertical
         }
     }
-    @objc func handleTap(sender: UITapGestureRecognizer) {
+    
+    @objc
+    func handleTap(sender: UITapGestureRecognizer) {
         if(sender.state != .ended) {
             return
         }
         
-        let preview = sender.view as! SWImagePreview
+        guard let preview = sender.view as? SWImagePreview else {
+            fatalError("Sender is not of type SWImagePreview")
+        }
         
         let fullscreenImageView = SWFullscreenImageViewController(named: preview.named)
         self.navigationController?.pushViewController(fullscreenImageView, animated: true)

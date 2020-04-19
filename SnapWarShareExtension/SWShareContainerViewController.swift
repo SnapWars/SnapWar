@@ -2,12 +2,25 @@ import MobileCoreServices
 import Social
 import UIKit
 
-class SWShareViewController: UIViewController {
+class SWShareContainerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        self.view.backgroundColor = .white
+        
         setupNavBar()
+
+        let pageViewController = SWSharePageViewController()
+        
+        addChild(pageViewController)
+        
+        pageViewController.view.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(pageViewController.view)
+        
+        NSLayoutConstraint.activate([
+            pageViewController.view.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10),
+            pageViewController.view.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -10),
+            pageViewController.view.topAnchor.constraint(equalTo: view.topAnchor, constant: 10),
+            pageViewController.view.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -10)
+        ])
     }
 
     private func setupNavBar() {

@@ -6,7 +6,7 @@ class SWShareNavViewController: UINavigationController {
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
 
-        self.setViewControllers([SWShareViewController()], animated: false)
+        self.setViewControllers([SWShareContainerViewController()], animated: false)
     }
 
     @available(*, unavailable)

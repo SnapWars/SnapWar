@@ -8,8 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		5DA15B92244C2734005C7448 /* SWShareNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA15B91244C2734005C7448 /* SWShareNavViewController.swift */; };
+		5DA15B94244C3487005C7448 /* SWSharePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA15B93244C3487005C7448 /* SWSharePageViewController.swift */; };
+		5DA15B96244C34A1005C7448 /* SWSharePageViewEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA15B95244C34A1005C7448 /* SWSharePageViewEntryViewController.swift */; };
 		5DC7CA6A24419E6100A4431E /* SWRouteType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC7CA6924419E6100A4431E /* SWRouteType.swift */; };
-		5DC7CA722446F4CF00A4431E /* SWShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC7CA712446F4CF00A4431E /* SWShareViewController.swift */; };
+		5DC7CA722446F4CF00A4431E /* SWShareContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC7CA712446F4CF00A4431E /* SWShareContainerViewController.swift */; };
 		5DC7CA792446F4CF00A4431E /* SnapWarShareExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5DC7CA6F2446F4CF00A4431E /* SnapWarShareExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		903CC74B243FBA0C00FA431D /* SWGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903CC74A243FBA0C00FA431D /* SWGalleryViewController.swift */; };
 		903CC74D243FBBB700FA431D /* SWCreateWarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903CC74C243FBBB700FA431D /* SWCreateWarViewController.swift */; };
@@ -55,9 +57,11 @@
 
 /* Begin PBXFileReference section */
 		5DA15B91244C2734005C7448 /* SWShareNavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWShareNavViewController.swift; sourceTree = "<group>"; };
+		5DA15B93244C3487005C7448 /* SWSharePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWSharePageViewController.swift; sourceTree = "<group>"; };
+		5DA15B95244C34A1005C7448 /* SWSharePageViewEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWSharePageViewEntryViewController.swift; sourceTree = "<group>"; };
 		5DC7CA6924419E6100A4431E /* SWRouteType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWRouteType.swift; sourceTree = "<group>"; };
 		5DC7CA6F2446F4CF00A4431E /* SnapWarShareExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SnapWarShareExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		5DC7CA712446F4CF00A4431E /* SWShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWShareViewController.swift; sourceTree = "<group>"; };
+		5DC7CA712446F4CF00A4431E /* SWShareContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWShareContainerViewController.swift; sourceTree = "<group>"; };
 		5DC7CA762446F4CF00A4431E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5DC7CA7E2446F58D00A4431E /* SnapWarShareExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SnapWarShareExtension.entitlements; sourceTree = "<group>"; };
 		5DC7CA7F2446F59E00A4431E /* SnapWar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SnapWar.entitlements; sourceTree = "<group>"; };
@@ -102,10 +106,12 @@
 		5DC7CA702446F4CF00A4431E /* SnapWarShareExtension */ = {
 			isa = PBXGroup;
 			children = (
-				5DC7CA7E2446F58D00A4431E /* SnapWarShareExtension.entitlements */,
-				5DC7CA712446F4CF00A4431E /* SWShareViewController.swift */,
 				5DC7CA762446F4CF00A4431E /* Info.plist */,
+				5DC7CA7E2446F58D00A4431E /* SnapWarShareExtension.entitlements */,
+				5DC7CA712446F4CF00A4431E /* SWShareContainerViewController.swift */,
 				5DA15B91244C2734005C7448 /* SWShareNavViewController.swift */,
+				5DA15B95244C34A1005C7448 /* SWSharePageViewEntryViewController.swift */,
+				5DA15B93244C3487005C7448 /* SWSharePageViewController.swift */,
 			);
 			path = SnapWarShareExtension;
 			sourceTree = "<group>";
@@ -295,8 +301,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DA15B94244C3487005C7448 /* SWSharePageViewController.swift in Sources */,
 				5DA15B92244C2734005C7448 /* SWShareNavViewController.swift in Sources */,
-				5DC7CA722446F4CF00A4431E /* SWShareViewController.swift in Sources */,
+				5DA15B96244C34A1005C7448 /* SWSharePageViewEntryViewController.swift in Sources */,
+				5DC7CA722446F4CF00A4431E /* SWShareContainerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

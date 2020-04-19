@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		5DC7CA6A24419E6100A4431E /* SWRouteType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC7CA6924419E6100A4431E /* SWRouteType.swift */; };
+		5DC7CA722446F4CF00A4431E /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC7CA712446F4CF00A4431E /* ShareViewController.swift */; };
+		5DC7CA752446F4CF00A4431E /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DC7CA732446F4CF00A4431E /* MainInterface.storyboard */; };
+		5DC7CA792446F4CF00A4431E /* SnapWarShareExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5DC7CA6F2446F4CF00A4431E /* SnapWarShareExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		903CC74B243FBA0C00FA431D /* SWGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903CC74A243FBA0C00FA431D /* SWGalleryViewController.swift */; };
 		903CC74D243FBBB700FA431D /* SWCreateWarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903CC74C243FBBB700FA431D /* SWCreateWarViewController.swift */; };
 		903CC751243FC62900FA431D /* SWNavButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903CC750243FC62900FA431D /* SWNavButton.swift */; };
@@ -26,8 +29,38 @@
 		90EF3BA724465DD200F37F9A /* SWImagePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EF3BA624465DD200F37F9A /* SWImagePreview.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		5DC7CA772446F4CF00A4431E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90BEDE67243BAAC7003BC12D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5DC7CA6E2446F4CF00A4431E;
+			remoteInfo = SnapWarShareExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5DC7CA7A2446F4CF00A4431E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5DC7CA792446F4CF00A4431E /* SnapWarShareExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		5DC7CA6924419E6100A4431E /* SWRouteType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWRouteType.swift; sourceTree = "<group>"; };
+		5DC7CA6F2446F4CF00A4431E /* SnapWarShareExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SnapWarShareExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DC7CA712446F4CF00A4431E /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		5DC7CA742446F4CF00A4431E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		5DC7CA762446F4CF00A4431E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DC7CA7E2446F58D00A4431E /* SnapWarShareExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SnapWarShareExtension.entitlements; sourceTree = "<group>"; };
+		5DC7CA7F2446F59E00A4431E /* SnapWar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SnapWar.entitlements; sourceTree = "<group>"; };
 		903CC74A243FBA0C00FA431D /* SWGalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWGalleryViewController.swift; sourceTree = "<group>"; };
 		903CC74C243FBBB700FA431D /* SWCreateWarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWCreateWarViewController.swift; sourceTree = "<group>"; };
 		903CC750243FC62900FA431D /* SWNavButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWNavButton.swift; sourceTree = "<group>"; };
@@ -49,6 +82,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5DC7CA6C2446F4CF00A4431E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		90BEDE6C243BAAC7003BC12D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -59,6 +99,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5DC7CA702446F4CF00A4431E /* SnapWarShareExtension */ = {
+			isa = PBXGroup;
+			children = (
+				5DC7CA7E2446F58D00A4431E /* SnapWarShareExtension.entitlements */,
+				5DC7CA712446F4CF00A4431E /* ShareViewController.swift */,
+				5DC7CA732446F4CF00A4431E /* MainInterface.storyboard */,
+				5DC7CA762446F4CF00A4431E /* Info.plist */,
+			);
+			path = SnapWarShareExtension;
+			sourceTree = "<group>";
+		};
 		90ADFA43244B36CF00636DF2 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +123,7 @@
 			children = (
 				90BEDE70243BAAC7003BC12D /* Products */,
 				90BEDE71243BAAC7003BC12D /* SnapWar */,
+				5DC7CA702446F4CF00A4431E /* SnapWarShareExtension */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				90BEDE6F243BAAC7003BC12D /* SnapWar.app */,
+				5DC7CA6F2446F4CF00A4431E /* SnapWarShareExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -87,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				90ADFA43244B36CF00636DF2 /* Extensions */,
+				5DC7CA7F2446F59E00A4431E /* SnapWar.entitlements */,
 				90BEDE72243BAAC7003BC12D /* AppDelegate.swift */,
 				90BEDE79243BAAC9003BC12D /* Assets.xcassets */,
 				90BEDE87243BB1BE003BC12D /* Components */,
@@ -143,6 +197,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		5DC7CA6E2446F4CF00A4431E /* SnapWarShareExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DC7CA7D2446F4CF00A4431E /* Build configuration list for PBXNativeTarget "SnapWarShareExtension" */;
+			buildPhases = (
+				5DC7CA6B2446F4CF00A4431E /* Sources */,
+				5DC7CA6C2446F4CF00A4431E /* Frameworks */,
+				5DC7CA6D2446F4CF00A4431E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SnapWarShareExtension;
+			productName = SnapWarShareExtension;
+			productReference = 5DC7CA6F2446F4CF00A4431E /* SnapWarShareExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		90BEDE6E243BAAC7003BC12D /* SnapWar */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 90BEDE81243BAAC9003BC12D /* Build configuration list for PBXNativeTarget "SnapWar" */;
@@ -150,10 +221,12 @@
 				90BEDE6B243BAAC7003BC12D /* Sources */,
 				90BEDE6C243BAAC7003BC12D /* Frameworks */,
 				90BEDE6D243BAAC7003BC12D /* Resources */,
+				5DC7CA7A2446F4CF00A4431E /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5DC7CA782446F4CF00A4431E /* PBXTargetDependency */,
 			);
 			name = SnapWar;
 			productName = SnapWar;
@@ -166,10 +239,13 @@
 		90BEDE67243BAAC7003BC12D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1020;
+				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = stickerwar;
 				TargetAttributes = {
+					5DC7CA6E2446F4CF00A4431E = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
 					90BEDE6E243BAAC7003BC12D = {
 						CreatedOnToolsVersion = 10.2.1;
 					};
@@ -189,11 +265,20 @@
 			projectRoot = "";
 			targets = (
 				90BEDE6E243BAAC7003BC12D /* SnapWar */,
+				5DC7CA6E2446F4CF00A4431E /* SnapWarShareExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		5DC7CA6D2446F4CF00A4431E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DC7CA752446F4CF00A4431E /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		90BEDE6D243BAAC7003BC12D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -207,6 +292,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5DC7CA6B2446F4CF00A4431E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DC7CA722446F4CF00A4431E /* ShareViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		90BEDE6B243BAAC7003BC12D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -230,7 +323,23 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		5DC7CA782446F4CF00A4431E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5DC7CA6E2446F4CF00A4431E /* SnapWarShareExtension */;
+			targetProxy = 5DC7CA772446F4CF00A4431E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		5DC7CA732446F4CF00A4431E /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5DC7CA742446F4CF00A4431E /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		90BEDE76243BAAC7003BC12D /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -250,6 +359,48 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		5DC7CA7B2446F4CF00A4431E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SnapWarShareExtension/SnapWarShareExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R6552SUGAZ;
+				INFOPLIST_FILE = SnapWarShareExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.snapwar.SnapWar.app.shareExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5DC7CA7C2446F4CF00A4431E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SnapWarShareExtension/SnapWarShareExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R6552SUGAZ;
+				INFOPLIST_FILE = SnapWarShareExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.snapwar.SnapWar.app.shareExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		90BEDE7F243BAAC9003BC12D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -369,15 +520,17 @@
 		90BEDE82243BAAC9003BC12D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SnapWar/SnapWar.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = C97KWWDNMP;
+				DEVELOPMENT_TEAM = R6552SUGAZ;
 				INFOPLIST_FILE = SnapWar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.snapwar.SnapWar;
+				PRODUCT_BUNDLE_IDENTIFIER = com.snapwar.SnapWar.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -387,15 +540,17 @@
 		90BEDE83243BAAC9003BC12D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SnapWar/SnapWar.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = C97KWWDNMP;
+				DEVELOPMENT_TEAM = R6552SUGAZ;
 				INFOPLIST_FILE = SnapWar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.snapwar.SnapWar;
+				PRODUCT_BUNDLE_IDENTIFIER = com.snapwar.SnapWar.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -405,6 +560,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5DC7CA7D2446F4CF00A4431E /* Build configuration list for PBXNativeTarget "SnapWarShareExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DC7CA7B2446F4CF00A4431E /* Debug */,
+				5DC7CA7C2446F4CF00A4431E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		90BEDE6A243BAAC7003BC12D /* Build configuration list for PBXProject "SnapWar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

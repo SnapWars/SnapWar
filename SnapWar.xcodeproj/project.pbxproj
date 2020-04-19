@@ -99,14 +99,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		90ADFA43244B36CF00636DF2 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				90ADFA41244B365A00636DF2 /* UIWindow.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
 		5DC7CA702446F4CF00A4431E /* SnapWarShareExtension */ = {
 			isa = PBXGroup;
 			children = (
@@ -118,12 +110,20 @@
 			path = SnapWarShareExtension;
 			sourceTree = "<group>";
 		};
+		90ADFA43244B36CF00636DF2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				90ADFA41244B365A00636DF2 /* UIWindow.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		90BEDE66243BAAC7003BC12D = {
 			isa = PBXGroup;
 			children = (
-				5DC7CA702446F4CF00A4431E /* SnapWarShareExtension */,
 				90BEDE70243BAAC7003BC12D /* Products */,
 				90BEDE71243BAAC7003BC12D /* SnapWar */,
+				5DC7CA702446F4CF00A4431E /* SnapWarShareExtension */,
 			);
 			sourceTree = "<group>";
 		};
@@ -372,7 +372,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.snapwar.SnapWar.SnapWarShareExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.snapwar.SnapWar.app.shareExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -393,7 +393,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.snapwar.SnapWar.SnapWarShareExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.snapwar.SnapWar.app.shareExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -530,7 +530,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.snapwar.SnapWar;
+				PRODUCT_BUNDLE_IDENTIFIER = com.snapwar.SnapWar.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -550,7 +550,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.snapwar.SnapWar;
+				PRODUCT_BUNDLE_IDENTIFIER = com.snapwar.SnapWar.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

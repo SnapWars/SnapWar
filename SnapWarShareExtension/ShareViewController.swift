@@ -1,13 +1,6 @@
-//
-//  ShareViewController.swift
-//  SnapWarShareExtension
-//
-//  Created by David Zhang on 4/15/20.
-//  Copyright © 2020 stickerwar. All rights reserved.
-//
-
-import UIKit
+import MobileCoreServices
 import Social
+import UIKit
 
 class ShareViewController: SLComposeServiceViewController {
 

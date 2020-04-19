@@ -4,8 +4,8 @@
 <dict>
 	<key>com.apple.security.application-groups</key>
 	<array>
-		<string>group.snapwar.shareExtension</string>
 		<string>group.snapwar.SnapWar</string>
+		<string>group.snapwar.SnapWar.shareExtension</string>
 	</array>
 </dict>
 </plist>

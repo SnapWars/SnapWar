@@ -4,7 +4,6 @@ class SWAuthViewController: UIViewController {
     var usernameField = SWTextField()
     
     override func viewDidLoad() {
-        
         super.viewDidLoad()
         
         view?.backgroundColor = SWColorType.white

@@ -8,6 +8,8 @@ class SWShareContainerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.view.backgroundColor = UIColor.black
+        
         setupNavBar()
         
         if let content = extensionContext!.inputItems[0] as? NSExtensionItem {

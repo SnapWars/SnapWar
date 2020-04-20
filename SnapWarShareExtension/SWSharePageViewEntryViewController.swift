@@ -1,10 +1,14 @@
 import UIKit
 
 class SWSharePageViewEntryViewController: UIViewController {
-    var imageView: UIImageView
+    fileprivate var imageView: UIImageView?
+    fileprivate var index: Int?
     
-    required init() {
-        self.imageView = UIImageView(image: UIImage.init(named: ""))
+    required init(entry: SWSharePageViewEntry) {
+        if let image = entry.getImage() {
+            self.imageView = UIImageView(image: image)
+        }
+
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -19,15 +23,25 @@ class SWSharePageViewEntryViewController: UIViewController {
         setup()
     }
     
-    func setup() {
-        view.addSubview(imageView)
+    fileprivate func setup() {
+        if let imageView = imageView {
+            view.addSubview(imageView)
 
-        imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
-        imageView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor).isActive = true
-        imageView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor).isActive = true
-        imageView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
-        
-        imageView.contentMode = .scaleAspectFit
+            imageView.translatesAutoresizingMaskIntoConstraints = false
+            imageView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
+            imageView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor).isActive = true
+            imageView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor).isActive = true
+            imageView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
+            
+            imageView.contentMode = .scaleAspectFit
+        }
+    }
+    
+    func setIndex(index: Int) {
+        self.index = index
+    }
+    
+    func getIndex() -> Int? {
+        return self.index
     }
 }

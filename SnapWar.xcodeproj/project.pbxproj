@@ -10,6 +10,8 @@
 		5DA15B92244C2734005C7448 /* SWShareNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA15B91244C2734005C7448 /* SWShareNavViewController.swift */; };
 		5DA15B94244C3487005C7448 /* SWSharePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA15B93244C3487005C7448 /* SWSharePageViewController.swift */; };
 		5DA15B96244C34A1005C7448 /* SWSharePageViewEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA15B95244C34A1005C7448 /* SWSharePageViewEntryViewController.swift */; };
+		5DA15B98244D7643005C7448 /* SWSharePageViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA15B97244D7643005C7448 /* SWSharePageViewManager.swift */; };
+		5DA15B9A244D768C005C7448 /* SWSharePageViewEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA15B99244D768C005C7448 /* SWSharePageViewEntry.swift */; };
 		5DC7CA6A24419E6100A4431E /* SWRouteType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC7CA6924419E6100A4431E /* SWRouteType.swift */; };
 		5DC7CA722446F4CF00A4431E /* SWShareContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC7CA712446F4CF00A4431E /* SWShareContainerViewController.swift */; };
 		5DC7CA792446F4CF00A4431E /* SnapWarShareExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5DC7CA6F2446F4CF00A4431E /* SnapWarShareExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -59,6 +61,8 @@
 		5DA15B91244C2734005C7448 /* SWShareNavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWShareNavViewController.swift; sourceTree = "<group>"; };
 		5DA15B93244C3487005C7448 /* SWSharePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWSharePageViewController.swift; sourceTree = "<group>"; };
 		5DA15B95244C34A1005C7448 /* SWSharePageViewEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWSharePageViewEntryViewController.swift; sourceTree = "<group>"; };
+		5DA15B97244D7643005C7448 /* SWSharePageViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWSharePageViewManager.swift; sourceTree = "<group>"; };
+		5DA15B99244D768C005C7448 /* SWSharePageViewEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWSharePageViewEntry.swift; sourceTree = "<group>"; };
 		5DC7CA6924419E6100A4431E /* SWRouteType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWRouteType.swift; sourceTree = "<group>"; };
 		5DC7CA6F2446F4CF00A4431E /* SnapWarShareExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SnapWarShareExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DC7CA712446F4CF00A4431E /* SWShareContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWShareContainerViewController.swift; sourceTree = "<group>"; };
@@ -112,6 +116,8 @@
 				5DA15B91244C2734005C7448 /* SWShareNavViewController.swift */,
 				5DA15B95244C34A1005C7448 /* SWSharePageViewEntryViewController.swift */,
 				5DA15B93244C3487005C7448 /* SWSharePageViewController.swift */,
+				5DA15B97244D7643005C7448 /* SWSharePageViewManager.swift */,
+				5DA15B99244D768C005C7448 /* SWSharePageViewEntry.swift */,
 			);
 			path = SnapWarShareExtension;
 			sourceTree = "<group>";
@@ -301,7 +307,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DA15B98244D7643005C7448 /* SWSharePageViewManager.swift in Sources */,
 				5DA15B94244C3487005C7448 /* SWSharePageViewController.swift in Sources */,
+				5DA15B9A244D768C005C7448 /* SWSharePageViewEntry.swift in Sources */,
 				5DA15B92244C2734005C7448 /* SWShareNavViewController.swift in Sources */,
 				5DA15B96244C34A1005C7448 /* SWSharePageViewEntryViewController.swift in Sources */,
 				5DC7CA722446F4CF00A4431E /* SWShareContainerViewController.swift in Sources */,

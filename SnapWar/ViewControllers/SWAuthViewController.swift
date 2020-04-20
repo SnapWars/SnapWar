@@ -41,5 +41,8 @@ class SWAuthViewController: UIViewController {
             formContainer.addArrangedSubview(textField)
         }
         
+        let passwordField = SWPasswordTextField()
+        passwordField.placeholder = "password"
+        formContainer.addArrangedSubview(passwordField)
     }
 }

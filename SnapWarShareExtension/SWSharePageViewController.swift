@@ -3,8 +3,6 @@ import UIKit
 class SWSharePageViewController: UIPageViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        view.backgroundColor = UIColor.black
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -12,6 +10,8 @@ class SWSharePageViewController: UIPageViewController {
         
         self.dataSource = self
         self.delegate = self
+        
+        self.setInitialViewController(viewController: SWSharePageViewEntryViewController())
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -19,6 +19,15 @@ class SWSharePageViewController: UIPageViewController {
         
         self.dataSource = nil
         self.delegate = nil
+    }
+    
+    fileprivate func setInitialViewController(viewController: UIViewController) {
+        self.setViewControllers(
+            [viewController],
+            direction: .forward,
+            animated: false,
+            completion: nil
+        )
     }
 }
 
@@ -33,13 +42,13 @@ extension SWSharePageViewController: UIPageViewControllerDelegate, UIPageViewCon
     func pageViewController(
         _ pageViewController: UIPageViewController,
         viewControllerBefore viewController: UIViewController) -> UIViewController? {
-        return nil
+        return SWSharePageViewEntryViewController()
     }
     
     func pageViewController(
         _ pageViewController: UIPageViewController,
         viewControllerAfter viewController: UIViewController) -> UIViewController? {
-        return nil
+        return SWSharePageViewEntryViewController()
     }
     
     func presentationCount(for pageViewController: UIPageViewController) -> Int {

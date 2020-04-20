@@ -3,6 +3,8 @@ import Social
 import UIKit
 
 class SWShareContainerViewController: UIViewController {
+    fileprivate var sharedImages = [UIImage]()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -21,6 +23,22 @@ class SWShareContainerViewController: UIViewController {
             pageViewController.view.topAnchor.constraint(equalTo: view.topAnchor, constant: 10),
             pageViewController.view.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -10)
         ])
+        
+        if let content = extensionContext!.inputItems[0] as? NSExtensionItem {
+            let contentType = kUTTypeImage as String
+            
+            if let attachments = content.attachments {
+                for attachment in attachments {
+                    if attachment.hasItemConformingToTypeIdentifier(contentType) {
+                        attachment.loadItem(forTypeIdentifier: contentType, options: nil, completionHandler: { data, error in
+                            if let data = data as? UIImage {
+                                self.sharedImages.append(data)
+                            }
+                        })
+                    }
+                }
+            }
+        }
     }
 
     private func setupNavBar() {
@@ -33,11 +51,18 @@ class SWShareContainerViewController: UIViewController {
         self.navigationItem.setRightBarButton(itemDone, animated: false)
     }
 
-    @objc private func cancelAction () {
-        
+    @objc
+    private func cancelAction() {
+        self.onCompletion()
     }
 
-    @objc private func doneAction() {
+    @objc
+    private func doneAction() {
+        // TODO: Import images to SnapWars library
+        self.onCompletion()
+    }
+    
+    fileprivate func onCompletion() {
         extensionContext?.completeRequest(returningItems: [], completionHandler: nil)
     }
 }

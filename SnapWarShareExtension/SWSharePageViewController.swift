@@ -1,6 +1,18 @@
 import UIKit
 
 class SWSharePageViewController: UIPageViewController {
+    fileprivate var images: [UIImage]?
+    
+    required init(images: [UIImage]) {
+        super.init(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil)
+
+        self.images = images
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }

@@ -23,7 +23,7 @@ class SWPasswordTextField: SWTextField {
         toggleButton.setTitleColor(UIColor.black, for: .normal)
         toggleButton.addTarget(self, action: #selector(toggleTextVisibility), for: .touchUpInside)
         setToggleButtonText()
-        setToggleButtonVisiblity()
+        setToggleButtonVisibility()
         
         rightView = toggleButton
         rightViewMode = .always
@@ -39,15 +39,11 @@ class SWPasswordTextField: SWTextField {
        }
     }
     
-    fileprivate func setToggleButtonVisiblity() {
+    fileprivate func setToggleButtonVisibility() {
+        toggleButton.isHidden = true
+        
         if let isEmpty = text?.isEmpty {
-            if isEmpty {
-                toggleButton.isHidden = true
-            } else {
-                toggleButton.isHidden = false
-            }
-        } else {
-            toggleButton.isHidden = true
+            toggleButton.isHidden = isEmpty
         }
     }
     
@@ -60,6 +56,6 @@ class SWPasswordTextField: SWTextField {
     
     @objc
     func textFieldDidChange() {
-        setToggleButtonVisiblity()
+        setToggleButtonVisibility()
     }
 }

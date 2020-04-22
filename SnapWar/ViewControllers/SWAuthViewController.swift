@@ -42,13 +42,13 @@ class SWAuthViewController: UIViewController, UITextFieldDelegate {
         loginButton.setTitle("Login", for: .normal)
         loginButton.backgroundColor = SWColorType.primary
         loginButton.addTarget(self, action: #selector(handleSubmit), for: .touchUpInside)
-        loginButton.isEnabled = isFormValid()
+        setLoginButtonState()
         formContainer.addArrangedSubview(loginButton)
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
-        loginButton.isEnabled = isFormValid()
-        print("is enabled", loginButton.isEnabled)
+        setLoginButtonState()
+
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -64,7 +64,6 @@ class SWAuthViewController: UIViewController, UITextFieldDelegate {
     }
     
     func isFormValid() -> Bool {
-        
         if let isUsernameEmpty = usernameField.text?.isEmpty {
             if isUsernameEmpty {
                 return false
@@ -77,6 +76,15 @@ class SWAuthViewController: UIViewController, UITextFieldDelegate {
             }
         }
         return true
+    }
+    
+    func setLoginButtonState() {
+        loginButton.isEnabled = isFormValid()
+        if loginButton.isEnabled {
+            loginButton.alpha = 1.0
+        } else {
+            loginButton.alpha = 0.5
+        }
     }
     
     @objc

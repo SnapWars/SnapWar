@@ -1,7 +1,9 @@
 import UIKit
 
-class SWAuthViewController: UIViewController {
+class SWAuthViewController: UIViewController, UITextFieldDelegate {
+    let formContainer = UIStackView()
     var usernameField = SWTextField()
+    let passwordField = SWPasswordTextField()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -11,14 +13,12 @@ class SWAuthViewController: UIViewController {
     }
     
     func setup() {
-        let formContainer = UIStackView()
         view.addSubview(formContainer)
         
         formContainer.axis = .vertical
         formContainer.spacing = 10
         formContainer.distribution = .equalSpacing
         formContainer.alignment = .fill
-        formContainer.backgroundColor = UIColor.blue
             
         let horizontalMargin:CGFloat = 10.0
         formContainer.translatesAutoresizingMaskIntoConstraints = false
@@ -28,21 +28,33 @@ class SWAuthViewController: UIViewController {
         formContainer.isLayoutMarginsRelativeArrangement = true
         formContainer.layoutMargins = UIEdgeInsets(top: 0, left: horizontalMargin, bottom: 0, right: horizontalMargin)
         
-        let keyboardTypes = [
-            UIKeyboardType.alphabet,
-            UIKeyboardType.numberPad,
-            UIKeyboardType.emailAddress
-        ]
-        for keyboardType in keyboardTypes {
-            let textField = SWTextField()
-            textField.keyboardType = keyboardType
-            textField.placeholder = "type here"
+        usernameField.placeholder = "username"
+        usernameField.delegate = self
+        usernameField.tag = 0
+        formContainer.addArrangedSubview(usernameField)
 
-            formContainer.addArrangedSubview(textField)
-        }
-        
-        let passwordField = SWPasswordTextField()
         passwordField.placeholder = "password"
+        passwordField.delegate = self
+        passwordField.tag = 1
         formContainer.addArrangedSubview(passwordField)
     }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        let nextTag = textField.tag + 1
+        
+        if let nextResponder = textField.superview?.viewWithTag(nextTag) {
+            nextResponder.becomeFirstResponder()
+        } else {
+            textField.resignFirstResponder()
+        }
+        
+        return true
+    }
+    
+    
+    @objc
+    func handleSubmit() {
+        
+    }
+    
 }

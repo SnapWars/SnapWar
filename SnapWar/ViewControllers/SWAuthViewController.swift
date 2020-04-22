@@ -48,7 +48,6 @@ class SWAuthViewController: UIViewController, UITextFieldDelegate {
     
     func textFieldDidEndEditing(_ textField: UITextField) {
         setLoginButtonState()
-
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -89,7 +88,7 @@ class SWAuthViewController: UIViewController, UITextFieldDelegate {
     
     @objc
     func handleSubmit() {
-        print("SUBMIT")
+
     }
     
 }

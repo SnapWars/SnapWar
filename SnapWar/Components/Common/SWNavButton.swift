@@ -1,6 +1,6 @@
 import UIKit
 
-class SWNavButton: UIButton {
+class SWNavButton: SWButton {
     required init(label: String) {
         super.init(frame: .zero)
         setupStyles()

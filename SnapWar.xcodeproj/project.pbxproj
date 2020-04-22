@@ -24,6 +24,7 @@
 		9098FED7244C90F000C2C254 /* SWTextIField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9098FED6244C90F000C2C254 /* SWTextIField.swift */; };
 		9098FED9244C95FE00C2C254 /* SWMainNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EF0A882442467E006433E5 /* SWMainNavViewController.swift */; };
 		909AE0A42450F51200BE65BB /* SWButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909AE0A32450F51200BE65BB /* SWButton.swift */; };
+		909AE0A62450F61800BE65BB /* SWPrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909AE0A52450F61800BE65BB /* SWPrimaryButton.swift */; };
 		90ADFA42244B365A00636DF2 /* UIWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90ADFA41244B365A00636DF2 /* UIWindow.swift */; };
 		90B977E02443A24600ADBF17 /* SWBattleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B977DF2443A24600ADBF17 /* SWBattleViewController.swift */; };
 		90BEDE73243BAAC7003BC12D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BEDE72243BAAC7003BC12D /* AppDelegate.swift */; };
@@ -80,6 +81,7 @@
 		908F3952244B7CA800D619B2 /* SWFullScreenImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWFullScreenImageViewController.swift; sourceTree = "<group>"; };
 		9098FED6244C90F000C2C254 /* SWTextIField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWTextIField.swift; sourceTree = "<group>"; };
 		909AE0A32450F51200BE65BB /* SWButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWButton.swift; sourceTree = "<group>"; };
+		909AE0A52450F61800BE65BB /* SWPrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SWPrimaryButton.swift; path = Common/SWPrimaryButton.swift; sourceTree = "<group>"; };
 		90ADFA41244B365A00636DF2 /* UIWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWindow.swift; sourceTree = "<group>"; };
 		90B977DF2443A24600ADBF17 /* SWBattleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWBattleViewController.swift; sourceTree = "<group>"; };
 		90BEDE6F243BAAC7003BC12D /* SnapWar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapWar.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -191,6 +193,7 @@
 				90BEDE92243BCD69003BC12D /* Common */,
 				90EF3BA624465DD200F37F9A /* SWImagePreview.swift */,
 				902FFF20244E509B0007DE4D /* SWPasswordTextField.swift */,
+				909AE0A52450F61800BE65BB /* SWPrimaryButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -331,6 +334,7 @@
 			files = (
 				90BEDE9C243BD400003BC12D /* SWFontType.swift in Sources */,
 				90EF3BA724465DD200F37F9A /* SWImagePreview.swift in Sources */,
+				909AE0A62450F61800BE65BB /* SWPrimaryButton.swift in Sources */,
 				908F3953244B7CA800D619B2 /* SWFullScreenImageViewController.swift in Sources */,
 				9098FED9244C95FE00C2C254 /* SWMainNavViewController.swift in Sources */,
 				5DC7CA6A24419E6100A4431E /* SWRouteType.swift in Sources */,

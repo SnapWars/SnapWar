@@ -4,6 +4,7 @@ class SWAuthViewController: UIViewController, UITextFieldDelegate {
     let formContainer = UIStackView()
     var usernameField = SWTextField()
     let passwordField = SWPasswordTextField()
+    let loginButton = UIButton()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,6 +38,17 @@ class SWAuthViewController: UIViewController, UITextFieldDelegate {
         passwordField.delegate = self
         passwordField.tag = 1
         formContainer.addArrangedSubview(passwordField)
+        
+        loginButton.setTitle("Login", for: .normal)
+        loginButton.backgroundColor = SWColorType.primary
+        loginButton.addTarget(self, action: #selector(handleSubmit), for: .touchUpInside)
+        loginButton.isEnabled = isFormValid()
+        formContainer.addArrangedSubview(loginButton)
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        loginButton.isEnabled = isFormValid()
+        print("is enabled", loginButton.isEnabled)
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -51,10 +63,25 @@ class SWAuthViewController: UIViewController, UITextFieldDelegate {
         return true
     }
     
+    func isFormValid() -> Bool {
+        
+        if let isUsernameEmpty = usernameField.text?.isEmpty {
+            if isUsernameEmpty {
+                return false
+            }
+        }
+        
+        if let isPasswordEmpty = passwordField.text?.isEmpty {
+            if isPasswordEmpty {
+                return false
+            }
+        }
+        return true
+    }
     
     @objc
     func handleSubmit() {
-        
+        print("SUBMIT")
     }
     
 }

@@ -98,6 +98,7 @@ extension SWCreateWarViewController: UITextFieldDelegate {
             nextResponder.becomeFirstResponder()
         } else {
             textField.resignFirstResponder()
+            handleSubmit()
         }
         
         return true

@@ -4,7 +4,7 @@ class SWCreateWarViewController: UIViewController {
     let formContainer = UIStackView()
     var nameField = SWTextField()
     let descriptionField = SWTextField()
-    let submitButton = UIButton()
+    let submitButton = SWPrimaryButton(label: "TO BATTLE")
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,7 +44,6 @@ class SWCreateWarViewController: UIViewController {
         descriptionField.tag = 1
         formContainer.addArrangedSubview(descriptionField)
         
-        submitButton.setTitle("TO BATTLE", for: .normal)
         submitButton.backgroundColor = SWColorType.primary
         submitButton.addTarget(self, action: #selector(handleSubmit), for: .touchUpInside)
         setSubmitButtonState()
@@ -68,11 +67,6 @@ class SWCreateWarViewController: UIViewController {
     
     func setSubmitButtonState() {
         submitButton.isEnabled = isFormValid()
-        if submitButton.isEnabled {
-            submitButton.alpha = 1.0
-        } else {
-            submitButton.alpha = 0.5
-        }
     }
     
     @objc

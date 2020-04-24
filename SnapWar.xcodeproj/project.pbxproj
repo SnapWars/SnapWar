@@ -35,6 +35,7 @@
 		90BEDE7A243BAAC9003BC12D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90BEDE79243BAAC9003BC12D /* Assets.xcassets */; };
 		90BEDE9A243BCFEF003BC12D /* SWColorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BEDE99243BCFEF003BC12D /* SWColorType.swift */; };
 		90BEDE9C243BD400003BC12D /* SWFontType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BEDE9B243BD400003BC12D /* SWFontType.swift */; };
+		90D94FCD24539C7B0023CFDC /* SWLoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D94FCC24539C7B0023CFDC /* SWLoginButton.swift */; };
 		90EF3BA724465DD200F37F9A /* SWImagePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EF3BA624465DD200F37F9A /* SWImagePreview.swift */; };
 /* End PBXBuildFile section */
 
@@ -105,6 +106,7 @@
 		90BEDE7E243BAAC9003BC12D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		90BEDE99243BCFEF003BC12D /* SWColorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWColorType.swift; sourceTree = "<group>"; };
 		90BEDE9B243BD400003BC12D /* SWFontType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWFontType.swift; sourceTree = "<group>"; };
+		90D94FCC24539C7B0023CFDC /* SWLoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWLoginButton.swift; sourceTree = "<group>"; };
 		90EF0A882442467E006433E5 /* SWMainNavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWMainNavViewController.swift; sourceTree = "<group>"; };
 		90EF3BA624465DD200F37F9A /* SWImagePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWImagePreview.swift; sourceTree = "<group>"; };
 		97AF3671A5EAFBF62BC4C6C8 /* Pods_SnapWar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnapWar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -232,6 +234,7 @@
 				90EF3BA624465DD200F37F9A /* SWImagePreview.swift */,
 				902FFF20244E509B0007DE4D /* SWPasswordTextField.swift */,
 				909AE0A52450F61800BE65BB /* SWPrimaryButton.swift */,
+				90D94FCC24539C7B0023CFDC /* SWLoginButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -445,6 +448,7 @@
 				903CC74D243FBBB700FA431D /* SWCreateWarViewController.swift in Sources */,
 				90BEDE75243BAAC7003BC12D /* SWMainViewController.swift in Sources */,
 				909AE0A42450F51200BE65BB /* SWButton.swift in Sources */,
+				90D94FCD24539C7B0023CFDC /* SWLoginButton.swift in Sources */,
 				9098FED7244C90F000C2C254 /* SWTextIField.swift in Sources */,
 				90ADFA42244B365A00636DF2 /* UIWindow.swift in Sources */,
 				90BEDE9A243BCFEF003BC12D /* SWColorType.swift in Sources */,

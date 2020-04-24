@@ -3,12 +3,12 @@ import SCSDKLoginKit
 
 class SWAuthViewController: UIViewController, UITextFieldDelegate {
     let formContainer = UIStackView()
-    var nameField = SWTextField()
+    let loginButton = SWLoginButton()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view?.backgroundColor = SWColorType.primary
+        view?.backgroundColor = SWColorType.white
         setup()
     }
 
@@ -17,7 +17,6 @@ class SWAuthViewController: UIViewController, UITextFieldDelegate {
 
         formContainer.axis = .vertical
         formContainer.spacing = 10
-        formContainer.distribution = .equalSpacing
         formContainer.alignment = .fill
 
         let horizontalMargin:CGFloat = 10.0
@@ -26,17 +25,23 @@ class SWAuthViewController: UIViewController, UITextFieldDelegate {
         formContainer.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor).isActive = true
         formContainer.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor).isActive = true
         formContainer.isLayoutMarginsRelativeArrangement = true
-        formContainer.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
         formContainer.layoutMargins = UIEdgeInsets(top: 0, left: horizontalMargin, bottom: 0, right: horizontalMargin)
 
-        let testButton = UIButton()
-        testButton.backgroundColor = UIColor.red
-        testButton.setTitle("test button", for: .normal)
-        formContainer.addArrangedSubview(testButton)
+        loginButton.addTarget(self, action: #selector(handleLogin(_:)), for: .touchUpInside)
+        formContainer.addArrangedSubview(loginButton)
 
-        if let loginButton = SCSDKLoginButton() {
-            loginButton.frame.size.height += 50
-            formContainer.addArrangedSubview(loginButton)
-        }
+    }
+    
+    @objc
+    func handleLogin(_ sender: Any) {
+        SCSDKLoginClient.login(from: self, completion: { success, error in
+            if let error = error {
+                print(error.localizedDescription)
+                return
+            }
+            if success {
+                print("success", success)
+            }
+        })
     }
 }

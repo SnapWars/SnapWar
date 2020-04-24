@@ -1,12 +1,14 @@
 import UIKit
+import SCSDKLoginKit
 
 class SWAuthViewController: UIViewController, UITextFieldDelegate {
     let formContainer = UIStackView()
+    var nameField = SWTextField()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view?.backgroundColor = SWColorType.white
+        view?.backgroundColor = SWColorType.primary
         setup()
     }
 
@@ -24,6 +26,17 @@ class SWAuthViewController: UIViewController, UITextFieldDelegate {
         formContainer.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor).isActive = true
         formContainer.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor).isActive = true
         formContainer.isLayoutMarginsRelativeArrangement = true
+        formContainer.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
         formContainer.layoutMargins = UIEdgeInsets(top: 0, left: horizontalMargin, bottom: 0, right: horizontalMargin)
+
+        let testButton = UIButton()
+        testButton.backgroundColor = UIColor.red
+        testButton.setTitle("test button", for: .normal)
+        formContainer.addArrangedSubview(testButton)
+
+        if let loginButton = SCSDKLoginButton() {
+            loginButton.frame.size.height += 50
+            formContainer.addArrangedSubview(loginButton)
+        }
     }
 }

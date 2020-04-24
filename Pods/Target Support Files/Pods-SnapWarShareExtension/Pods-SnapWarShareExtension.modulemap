@@ -1,0 +1,6 @@
+framework module Pods_SnapWarShareExtension {
+  umbrella header "Pods-SnapWarShareExtension-umbrella.h"
+
+  export *
+  module * { export * }
+}

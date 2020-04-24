@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36C35085E552C5C9C714B183 /* Pods_SnapWarShareExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DF35304000178163EBDA41F /* Pods_SnapWarShareExtension.framework */; };
 		5DA15B92244C2734005C7448 /* SWShareNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA15B91244C2734005C7448 /* SWShareNavViewController.swift */; };
 		5DA15B94244C3487005C7448 /* SWSharePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA15B93244C3487005C7448 /* SWSharePageViewController.swift */; };
 		5DA15B96244C34A1005C7448 /* SWSharePageViewEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA15B95244C34A1005C7448 /* SWSharePageViewEntryViewController.swift */; };
@@ -15,6 +16,8 @@
 		5DC7CA6A24419E6100A4431E /* SWRouteType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC7CA6924419E6100A4431E /* SWRouteType.swift */; };
 		5DC7CA722446F4CF00A4431E /* SWShareContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC7CA712446F4CF00A4431E /* SWShareContainerViewController.swift */; };
 		5DC7CA792446F4CF00A4431E /* SnapWarShareExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5DC7CA6F2446F4CF00A4431E /* SnapWarShareExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		90163A2B2452469300E70EF7 /* Pods_SnapWar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97AF3671A5EAFBF62BC4C6C8 /* Pods_SnapWar.framework */; };
+		90163A2C2452469300E70EF7 /* Pods_SnapWar.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 97AF3671A5EAFBF62BC4C6C8 /* Pods_SnapWar.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		902FFF21244E509B0007DE4D /* SWPasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902FFF20244E509B0007DE4D /* SWPasswordTextField.swift */; };
 		903CC74B243FBA0C00FA431D /* SWGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903CC74A243FBA0C00FA431D /* SWGalleryViewController.swift */; };
 		903CC74D243FBBB700FA431D /* SWCreateWarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903CC74C243FBBB700FA431D /* SWCreateWarViewController.swift */; };
@@ -29,9 +32,7 @@
 		90B977E02443A24600ADBF17 /* SWBattleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B977DF2443A24600ADBF17 /* SWBattleViewController.swift */; };
 		90BEDE73243BAAC7003BC12D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BEDE72243BAAC7003BC12D /* AppDelegate.swift */; };
 		90BEDE75243BAAC7003BC12D /* SWMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BEDE74243BAAC7003BC12D /* SWMainViewController.swift */; };
-		90BEDE78243BAAC7003BC12D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90BEDE76243BAAC7003BC12D /* Main.storyboard */; };
 		90BEDE7A243BAAC9003BC12D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90BEDE79243BAAC9003BC12D /* Assets.xcassets */; };
-		90BEDE7D243BAAC9003BC12D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90BEDE7B243BAAC9003BC12D /* LaunchScreen.storyboard */; };
 		90BEDE9A243BCFEF003BC12D /* SWColorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BEDE99243BCFEF003BC12D /* SWColorType.swift */; };
 		90BEDE9C243BD400003BC12D /* SWFontType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BEDE9B243BD400003BC12D /* SWFontType.swift */; };
 		90EF3BA724465DD200F37F9A /* SWImagePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EF3BA624465DD200F37F9A /* SWImagePreview.swift */; };
@@ -59,9 +60,22 @@
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		90163A2D2452469300E70EF7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				90163A2C2452469300E70EF7 /* Pods_SnapWar.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4042874C3392CAA9EA2FBC03 /* Pods-SnapWar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapWar.debug.xcconfig"; path = "Target Support Files/Pods-SnapWar/Pods-SnapWar.debug.xcconfig"; sourceTree = "<group>"; };
+		4FCE845FF71A1EDA7017B657 /* Pods-SnapWarShareExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapWarShareExtension.release.xcconfig"; path = "Target Support Files/Pods-SnapWarShareExtension/Pods-SnapWarShareExtension.release.xcconfig"; sourceTree = "<group>"; };
 		5DA15B91244C2734005C7448 /* SWShareNavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWShareNavViewController.swift; sourceTree = "<group>"; };
 		5DA15B93244C3487005C7448 /* SWSharePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWSharePageViewController.swift; sourceTree = "<group>"; };
 		5DA15B95244C34A1005C7448 /* SWSharePageViewEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWSharePageViewEntryViewController.swift; sourceTree = "<group>"; };
@@ -87,14 +101,16 @@
 		90BEDE6F243BAAC7003BC12D /* SnapWar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapWar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90BEDE72243BAAC7003BC12D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		90BEDE74243BAAC7003BC12D /* SWMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWMainViewController.swift; sourceTree = "<group>"; };
-		90BEDE77243BAAC7003BC12D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		90BEDE79243BAAC9003BC12D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		90BEDE7C243BAAC9003BC12D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		90BEDE7E243BAAC9003BC12D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		90BEDE99243BCFEF003BC12D /* SWColorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWColorType.swift; sourceTree = "<group>"; };
 		90BEDE9B243BD400003BC12D /* SWFontType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWFontType.swift; sourceTree = "<group>"; };
 		90EF0A882442467E006433E5 /* SWMainNavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWMainNavViewController.swift; sourceTree = "<group>"; };
 		90EF3BA624465DD200F37F9A /* SWImagePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWImagePreview.swift; sourceTree = "<group>"; };
+		97AF3671A5EAFBF62BC4C6C8 /* Pods_SnapWar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnapWar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DF35304000178163EBDA41F /* Pods_SnapWarShareExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnapWarShareExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F18BC592C403DA0FBE8E6D63 /* Pods-SnapWar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapWar.release.xcconfig"; path = "Target Support Files/Pods-SnapWar/Pods-SnapWar.release.xcconfig"; sourceTree = "<group>"; };
+		FE9D30E9FA0E1EFFFC602342 /* Pods-SnapWarShareExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapWarShareExtension.debug.xcconfig"; path = "Target Support Files/Pods-SnapWarShareExtension/Pods-SnapWarShareExtension.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36C35085E552C5C9C714B183 /* Pods_SnapWarShareExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,12 +126,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90163A2B2452469300E70EF7 /* Pods_SnapWar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A7A2336496E655E28D8816B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				97AF3671A5EAFBF62BC4C6C8 /* Pods_SnapWar.framework */,
+				9DF35304000178163EBDA41F /* Pods_SnapWarShareExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5DC7CA702446F4CF00A4431E /* SnapWarShareExtension */ = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +155,17 @@
 				5DA15B99244D768C005C7448 /* SWSharePageViewEntry.swift */,
 			);
 			path = SnapWarShareExtension;
+			sourceTree = "<group>";
+		};
+		74179069F4B42F95F3541021 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4042874C3392CAA9EA2FBC03 /* Pods-SnapWar.debug.xcconfig */,
+				F18BC592C403DA0FBE8E6D63 /* Pods-SnapWar.release.xcconfig */,
+				FE9D30E9FA0E1EFFFC602342 /* Pods-SnapWarShareExtension.debug.xcconfig */,
+				4FCE845FF71A1EDA7017B657 /* Pods-SnapWarShareExtension.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		90ADFA43244B36CF00636DF2 /* Extensions */ = {
@@ -144,6 +182,8 @@
 				90BEDE70243BAAC7003BC12D /* Products */,
 				90BEDE71243BAAC7003BC12D /* SnapWar */,
 				5DC7CA702446F4CF00A4431E /* SnapWarShareExtension */,
+				74179069F4B42F95F3541021 /* Pods */,
+				0A7A2336496E655E28D8816B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -165,8 +205,6 @@
 				90BEDE79243BAAC9003BC12D /* Assets.xcassets */,
 				90BEDE87243BB1BE003BC12D /* Components */,
 				90BEDE7E243BAAC9003BC12D /* Info.plist */,
-				90BEDE7B243BAAC9003BC12D /* LaunchScreen.storyboard */,
-				90BEDE76243BAAC7003BC12D /* Main.storyboard */,
 				90BEDE98243BCFA1003BC12D /* Types */,
 				90BEDE85243BB199003BC12D /* ViewControllers */,
 			);
@@ -225,6 +263,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5DC7CA7D2446F4CF00A4431E /* Build configuration list for PBXNativeTarget "SnapWarShareExtension" */;
 			buildPhases = (
+				728DA0662CBF228729E3B5F9 /* [CP] Check Pods Manifest.lock */,
 				5DC7CA6B2446F4CF00A4431E /* Sources */,
 				5DC7CA6C2446F4CF00A4431E /* Frameworks */,
 				5DC7CA6D2446F4CF00A4431E /* Resources */,
@@ -242,10 +281,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 90BEDE81243BAAC9003BC12D /* Build configuration list for PBXNativeTarget "SnapWar" */;
 			buildPhases = (
+				4FD3887C3F74B5894B99DF40 /* [CP] Check Pods Manifest.lock */,
 				90BEDE6B243BAAC7003BC12D /* Sources */,
 				90BEDE6C243BAAC7003BC12D /* Frameworks */,
 				90BEDE6D243BAAC7003BC12D /* Resources */,
 				5DC7CA7A2446F4CF00A4431E /* Embed App Extensions */,
+				AFFD8E1D983E110DDFDD87ED /* [CP] Embed Pods Frameworks */,
+				90163A2D2452469300E70EF7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -264,7 +306,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
-				LastUpgradeCheck = 1020;
+				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = stickerwar;
 				TargetAttributes = {
 					5DC7CA6E2446F4CF00A4431E = {
@@ -306,13 +348,75 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90BEDE7D243BAAC9003BC12D /* LaunchScreen.storyboard in Resources */,
 				90BEDE7A243BAAC9003BC12D /* Assets.xcassets in Resources */,
-				90BEDE78243BAAC7003BC12D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4FD3887C3F74B5894B99DF40 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SnapWar-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		728DA0662CBF228729E3B5F9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SnapWarShareExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AFFD8E1D983E110DDFDD87ED /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SnapWar/Pods-SnapWar-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SnapWar/Pods-SnapWar-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SnapWar/Pods-SnapWar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5DC7CA6B2446F4CF00A4431E /* Sources */ = {
@@ -363,28 +467,10 @@
 		};
 /* End PBXTargetDependency section */
 
-/* Begin PBXVariantGroup section */
-		90BEDE76243BAAC7003BC12D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				90BEDE77243BAAC7003BC12D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		90BEDE7B243BAAC9003BC12D /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				90BEDE7C243BAAC9003BC12D /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
 		5DC7CA7B2446F4CF00A4431E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE9D30E9FA0E1EFFFC602342 /* Pods-SnapWarShareExtension.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = SnapWarShareExtension/SnapWarShareExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -406,6 +492,7 @@
 		};
 		5DC7CA7C2446F4CF00A4431E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FCE845FF71A1EDA7017B657 /* Pods-SnapWarShareExtension.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = SnapWarShareExtension/SnapWarShareExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -543,6 +630,7 @@
 		};
 		90BEDE82243BAAC9003BC12D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4042874C3392CAA9EA2FBC03 /* Pods-SnapWar.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -563,6 +651,7 @@
 		};
 		90BEDE83243BAAC9003BC12D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F18BC592C403DA0FBE8E6D63 /* Pods-SnapWar.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;

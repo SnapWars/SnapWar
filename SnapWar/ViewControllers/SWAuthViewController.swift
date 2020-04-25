@@ -1,7 +1,7 @@
 import UIKit
 
 class SWAuthViewController: UIViewController, UITextFieldDelegate {
-    let formContainer = UIStackView()
+    fileprivate let formContainer = UIStackView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -10,7 +10,7 @@ class SWAuthViewController: UIViewController, UITextFieldDelegate {
         setup()
     }
 
-    func setup() {
+    fileprivate func setup() {
         view.addSubview(formContainer)
 
         formContainer.axis = .vertical

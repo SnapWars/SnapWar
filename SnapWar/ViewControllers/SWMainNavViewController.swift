@@ -5,10 +5,10 @@ class SWMainNavViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupTabs()
+        setup()
     }
     
-    fileprivate func setupTabs() {
+    fileprivate func setup() {
 
         let mainController = SWMainViewController()
         mainController.tabBarItem = UITabBarItem(tabBarSystemItem: .contacts, tag: 0)

@@ -2,12 +2,13 @@
 import UIKit
 
 class SWFullscreenImageViewController: UIViewController {
-    var imageView: UIImageView
+    fileprivate var imageView: UIImageView
     
     required init(named: String) {
         guard let image = UIImage(named: named) else {
             fatalError("Image not found")
         }
+
         self.imageView = UIImageView(image: image)
         super.init(nibName: nil, bundle: nil)
     }
@@ -23,7 +24,7 @@ class SWFullscreenImageViewController: UIViewController {
         setup()
     }
     
-    func setup() {
+    fileprivate func setup() {
         view.addSubview(imageView)
 
         imageView.translatesAutoresizingMaskIntoConstraints = false
@@ -39,7 +40,8 @@ class SWFullscreenImageViewController: UIViewController {
         imageView.isUserInteractionEnabled = true
     }
     
-    @objc func handleTap(sender: UITapGestureRecognizer) {
+    @objc
+    fileprivate func handleTap(sender: UITapGestureRecognizer) {
         if(sender.state != .ended) {
             return
         }

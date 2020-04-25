@@ -34,13 +34,14 @@ class SWAuthViewController: UIViewController, UITextFieldDelegate {
     
     @objc
     func handleLogin(_ sender: Any) {
+        print("LOGGING IN")
         SCSDKLoginClient.login(from: self, completion: { success, error in
             if let error = error {
-                print(error.localizedDescription)
+                print("ERROR", error.localizedDescription)
                 return
             }
             if success {
-                print("success", success)
+                print("SUCCESS", success)
             }
         })
     }

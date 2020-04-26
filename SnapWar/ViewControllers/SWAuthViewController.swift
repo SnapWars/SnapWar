@@ -2,8 +2,8 @@ import UIKit
 import SCSDKLoginKit
 
 class SWAuthViewController: UIViewController, UITextFieldDelegate {
-    let formContainer = UIStackView()
-    let loginButton = SWLoginButton()
+    fileprivate let formContainer = UIStackView()
+    fileprivate let loginButton = SWLoginButton()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -12,7 +12,7 @@ class SWAuthViewController: UIViewController, UITextFieldDelegate {
         setup()
     }
 
-    func setup() {
+    fileprivate func setup() {
         view.addSubview(formContainer)
 
         formContainer.axis = .vertical
@@ -27,22 +27,40 @@ class SWAuthViewController: UIViewController, UITextFieldDelegate {
         formContainer.isLayoutMarginsRelativeArrangement = true
         formContainer.layoutMargins = UIEdgeInsets(top: 0, left: horizontalMargin, bottom: 0, right: horizontalMargin)
 
-        loginButton.addTarget(self, action: #selector(handleLogin(_:)), for: .touchUpInside)
+        loginButton.addTarget(self, action: #selector(login(_:)), for: .touchUpInside)
         formContainer.addArrangedSubview(loginButton)
 
     }
     
     @objc
-    func handleLogin(_ sender: Any) {
-        print("LOGGING IN")
+    fileprivate func login(_ sender: Any) {
         SCSDKLoginClient.login(from: self, completion: { success, error in
             if let error = error {
-                print("ERROR", error.localizedDescription)
-                return
-            }
-            if success {
-                print("SUCCESS", success)
+                print("Login error: ", error.localizedDescription)
+            } else if success {
+                print("Login success")
+                
+                self.fetchUserInfo()
             }
         })
+    }
+    
+    fileprivate func fetchUserInfo() {
+        let graphQLQuery = "{me{displayName, bitmoji{avatar}}}"
+        
+        SCSDKLoginClient.fetchUserData(
+                withQuery: graphQLQuery,
+                variables: nil,
+                success: { userInfo in
+                    if let userInfo = userInfo,
+                       let jsonData = try? JSONSerialization.data(withJSONObject: userInfo, options: .prettyPrinted) {
+                        if let data = String(data: jsonData, encoding: .ascii) {
+                            print("Fetched user info: " + data)
+                            // TODO: Assign data to user model
+                        }
+                    }
+            }) { (error, isUserLoggedOut) in
+                print(error?.localizedDescription ?? "")
+        }
     }
 }

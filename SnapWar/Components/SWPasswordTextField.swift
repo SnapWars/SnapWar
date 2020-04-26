@@ -1,7 +1,7 @@
 import UIKit
 
 class SWPasswordTextField: SWTextField {
-    let toggleButton = UIButton()
+    fileprivate let toggleButton = UIButton()
     
     required init() {
         super.init()
@@ -55,7 +55,7 @@ class SWPasswordTextField: SWTextField {
     }
     
     @objc
-    func textFieldDidChange() {
+    fileprivate func textFieldDidChange() {
         setToggleButtonVisibility()
     }
 }

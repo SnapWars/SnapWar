@@ -1,10 +1,11 @@
 import UIKit
 
 class SWCreateWarViewController: UIViewController {
-    let formContainer = UIStackView()
-    var nameField = SWTextField()
-    let descriptionField = SWTextField()
-    let submitButton = SWPrimaryButton(label: "TO BATTLE")
+    fileprivate let formContainer = UIStackView()
+    fileprivate let descriptionField = SWTextField()
+    fileprivate let submitButton = SWPrimaryButton(label: "TO BATTLE")
+
+    fileprivate var nameField = SWTextField()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,7 +19,7 @@ class SWCreateWarViewController: UIViewController {
         descriptionField.delegate = nil
     }
     
-    func setup() {
+    fileprivate func setup() {
         view.addSubview(formContainer)
         
         formContainer.axis = .vertical
@@ -50,7 +51,7 @@ class SWCreateWarViewController: UIViewController {
         formContainer.addArrangedSubview(submitButton)
     }
     
-    func isFormValid() -> Bool {
+    fileprivate func isFormValid() -> Bool {
         if let isUsernameEmpty = nameField.text?.isEmpty {
             if isUsernameEmpty {
                 return false
@@ -65,12 +66,12 @@ class SWCreateWarViewController: UIViewController {
         return true
     }
     
-    func setSubmitButtonState() {
+    fileprivate func setSubmitButtonState() {
         submitButton.isEnabled = isFormValid()
     }
     
     @objc
-    func handleSubmit() {
+    fileprivate func handleSubmit() {
 
     }
 }

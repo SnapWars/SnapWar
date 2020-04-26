@@ -1,7 +1,7 @@
 import UIKit
 
 class SWBattleViewController: UIViewController {
-    let previewContainer = UIStackView()
+    fileprivate let previewContainer = UIStackView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -14,8 +14,16 @@ class SWBattleViewController: UIViewController {
         ]
         addPreviewImages(testImageNames)
     }
+    
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        if(UIWindow.isLandscape) {
+             previewContainer.axis = .horizontal
+        } else {
+            previewContainer.axis = .vertical
+        }
+    }
 
-    func addPreviewImages(_ imageNames: Array<String>) {
+    fileprivate func addPreviewImages(_ imageNames: Array<String>) {
         view.addSubview(previewContainer)
 
         previewContainer.axis = .vertical
@@ -38,18 +46,9 @@ class SWBattleViewController: UIViewController {
             previewContainer.addArrangedSubview(preview)
         }
     }
-
-    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
-
-        if(UIWindow.isLandscape) {
-             previewContainer.axis = .horizontal
-        } else {
-            previewContainer.axis = .vertical
-        }
-    }
     
     @objc
-    func handleTap(sender: UITapGestureRecognizer) {
+    fileprivate func handleTap(sender: UITapGestureRecognizer) {
         if(sender.state != .ended) {
             return
         }
@@ -58,7 +57,7 @@ class SWBattleViewController: UIViewController {
             fatalError("Sender is not of type SWImagePreview")
         }
         
-        let fullscreenImageView = SWFullscreenImageViewController(named: preview.named)
+        let fullscreenImageView = SWFullscreenImageViewController(named: preview.getImageName())
         self.navigationController?.pushViewController(fullscreenImageView, animated: true)
     }
 }

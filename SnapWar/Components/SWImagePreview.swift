@@ -1,7 +1,7 @@
 import UIKit
 
 class SWImagePreview: UIImageView {
-    var named: String
+    fileprivate var named: String
     
     required init(named: String, frame: CGRect) {
         self.named = named
@@ -19,9 +19,13 @@ class SWImagePreview: UIImageView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func setup() {
+    fileprivate func setup() {
         clipsToBounds = true
         backgroundColor = SWColorType.black
         contentMode = .scaleAspectFill
+    }
+    
+    func getImageName() -> String {
+        return named
     }
 }

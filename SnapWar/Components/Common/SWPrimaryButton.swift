@@ -3,7 +3,7 @@ import UIKit
 class SWPrimaryButton: SWButton {
     required init(label: String) {
         super.init(frame: .zero)
-        setupStyles()
+        setup()
 
         setTitle(label, for: .normal)
     }
@@ -12,7 +12,7 @@ class SWPrimaryButton: SWButton {
         fatalError("init(coder:) has not been implemented")
     }
 
-    func setupStyles() {
+    fileprivate func setup() {
         backgroundColor = SWColorType.primary
         setTitleColor(SWColorType.white, for: .normal)
 

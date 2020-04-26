@@ -47,7 +47,7 @@ class SWAuthViewController: UIViewController {
     }
     
     fileprivate func fetchUserInfo() {
-        let graphQLQuery = "{me{displayName, bitmoji{avatar}}}"
+        let graphQLQuery = "{me{displayName, bitmoji{avatar}, externalId}}"
         
         SCSDKLoginClient.fetchUserData(
                 withQuery: graphQLQuery,

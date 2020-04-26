@@ -14,7 +14,7 @@ class SWMainNavViewController: UITabBarController {
         mainController.tabBarItem = UITabBarItem(tabBarSystemItem: .contacts, tag: 0)
         
         let authController = SWAuthViewController()
-        authController.tabBarItem = UITabBarItem(tabBarSystemItem: .bookmarks, tag: 1)
+        authController.tabBarItem = UITabBarItem(tabBarSystemItem: .featured, tag: 1)
         
         let galleryController = SWGalleryViewController()
         galleryController.tabBarItem = UITabBarItem(tabBarSystemItem: .downloads, tag: 2)
@@ -26,8 +26,8 @@ class SWMainNavViewController: UITabBarController {
         battleViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 4)
         
         viewControllers = [
-            createWarController,
             authController,
+            createWarController, 
             battleViewController,
             mainController,
             galleryController,

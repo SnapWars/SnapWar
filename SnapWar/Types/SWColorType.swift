@@ -5,4 +5,5 @@ struct SWColorType {
     static let black =  UIColor(red: 0, green: 0, blue: 0, alpha: 1)
     static let primary = UIColor(red: 0.2, green: 0.2, blue: 1, alpha: 1)
     static let gray = UIColor(red: 0.94, green: 0.94, blue: 0.95, alpha: 1.0)
+    static let snapchatYellow = UIColor(red: 1, green: 0.95, blue: 0, alpha: 1)
 }

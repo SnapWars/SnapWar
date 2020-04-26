@@ -1,7 +1,7 @@
-import UIKit
 import SCSDKLoginKit
+import UIKit
 
-class SWAuthViewController: UIViewController, UITextFieldDelegate {
+class SWAuthViewController: UIViewController {
     fileprivate let formContainer = UIStackView()
     fileprivate let loginButton = SWLoginButton()
 
@@ -30,6 +30,7 @@ class SWAuthViewController: UIViewController, UITextFieldDelegate {
         loginButton.addTarget(self, action: #selector(login(_:)), for: .touchUpInside)
         formContainer.addArrangedSubview(loginButton)
 
+        SCSDKLoginClient.addLoginStatusObserver(SWLoginStatusObserver.instance)
     }
     
     @objc

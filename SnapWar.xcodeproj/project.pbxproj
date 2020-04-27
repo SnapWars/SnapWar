@@ -16,7 +16,6 @@
 		5DA15B98244D7643005C7448 /* SWSharePageViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA15B97244D7643005C7448 /* SWSharePageViewManager.swift */; };
 		5DA15B9A244D768C005C7448 /* SWSharePageViewEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA15B99244D768C005C7448 /* SWSharePageViewEntry.swift */; };
 		5DA15B9E24551BAA005C7448 /* SWLoginStatusObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA15B9D24551BAA005C7448 /* SWLoginStatusObserver.swift */; };
-		5DC7CA6A24419E6100A4431E /* SWRouteType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC7CA6924419E6100A4431E /* SWRouteType.swift */; };
 		5DC7CA722446F4CF00A4431E /* SWShareContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC7CA712446F4CF00A4431E /* SWShareContainerViewController.swift */; };
 		5DC7CA792446F4CF00A4431E /* SnapWarShareExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5DC7CA6F2446F4CF00A4431E /* SnapWarShareExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		90163A2C2452469300E70EF7 /* Pods_SnapWar.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 97AF3671A5EAFBF62BC4C6C8 /* Pods_SnapWar.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -93,7 +92,6 @@
 		5DA15B97244D7643005C7448 /* SWSharePageViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWSharePageViewManager.swift; sourceTree = "<group>"; };
 		5DA15B99244D768C005C7448 /* SWSharePageViewEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWSharePageViewEntry.swift; sourceTree = "<group>"; };
 		5DA15B9D24551BAA005C7448 /* SWLoginStatusObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWLoginStatusObserver.swift; sourceTree = "<group>"; };
-		5DC7CA6924419E6100A4431E /* SWRouteType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWRouteType.swift; sourceTree = "<group>"; };
 		5DC7CA6F2446F4CF00A4431E /* SnapWarShareExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SnapWarShareExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DC7CA712446F4CF00A4431E /* SWShareContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWShareContainerViewController.swift; sourceTree = "<group>"; };
 		5DC7CA762446F4CF00A4431E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -155,6 +153,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		5D0712852456C9EE00276C35 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				97AF3671A5EAFBF62BC4C6C8 /* Pods_SnapWar.framework */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
 		5DA15B9C24551B99005C7448 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
@@ -207,6 +213,7 @@
 				5DC7CA702446F4CF00A4431E /* SnapWarShareExtension */,
 				74179069F4B42F95F3541021 /* Pods */,
 				0A7A2336496E655E28D8816B /* Frameworks */,
+				5D0712852456C9EE00276C35 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -277,7 +284,6 @@
 			children = (
 				90BEDE99243BCFEF003BC12D /* SWColorType.swift */,
 				90BEDE9B243BD400003BC12D /* SWFontType.swift */,
-				5DC7CA6924419E6100A4431E /* SWRouteType.swift */,
 			);
 			path = Types;
 			sourceTree = "<group>";
@@ -469,7 +475,6 @@
 				908F3953244B7CA800D619B2 /* SWFullScreenImageViewController.swift in Sources */,
 				9098FED9244C95FE00C2C254 /* SWMainNavViewController.swift in Sources */,
 				5DA15B9E24551BAA005C7448 /* SWLoginStatusObserver.swift in Sources */,
-				5DC7CA6A24419E6100A4431E /* SWRouteType.swift in Sources */,
 				903CC74D243FBBB700FA431D /* SWCreateWarViewController.swift in Sources */,
 				909AE0A42450F51200BE65BB /* SWButton.swift in Sources */,
 				5D0712792456B4FA00276C35 /* SWWarViewController.swift in Sources */,

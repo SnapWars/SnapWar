@@ -9,31 +9,27 @@ class SWMainNavViewController: UITabBarController {
     }
     
     fileprivate func setup() {
-        let galleryController = SWGalleryViewController()
+        let galleryViewController = SWGalleryViewController()
+        let warViewController = SWWarViewController()
+        let accountViewController = SWAccountViewController()
         
-        let galleryTabBarItem = UITabBarItem()
-        galleryTabBarItem.image = UIImage.init(named: "gallery-unfilled")
-        galleryTabBarItem.selectedImage = UIImage.init(named: "gallery-filled")
-        galleryController.tabBarItem = galleryTabBarItem
+        let iconBaseNameToControllerMapping = [
+            "gallery": galleryViewController,
+            "war": warViewController,
+            "account": accountViewController
+        ]
         
-        let warController = SWWarViewController()
-        
-        let warTabBarItem = UITabBarItem()
-        warTabBarItem.image = UIImage.init(named: "war-unfilled")
-        warTabBarItem.selectedImage = UIImage.init(named: "war-filled")
-        warController.tabBarItem = warTabBarItem
-        
-        let accountController = SWAccountViewController()
-        
-        let accountTabBarItem = UITabBarItem()
-        accountTabBarItem.image = UIImage.init(named: "account-unfilled")
-        accountTabBarItem.selectedImage = UIImage.init(named: "account-filled")
-        accountController.tabBarItem = accountTabBarItem
+        for (iconBaseName, controller) in iconBaseNameToControllerMapping {
+            let item = UITabBarItem()
+            item.image = UIImage.init(named: iconBaseName + "-unfilled")
+            item.selectedImage = UIImage.init(named: iconBaseName + "-filled")
+            controller.tabBarItem = item
+        }
         
         viewControllers = [
-            galleryController,
-            warController,
-            accountController
+            galleryViewController,
+            warViewController,
+            accountViewController
         ]
     }
 }

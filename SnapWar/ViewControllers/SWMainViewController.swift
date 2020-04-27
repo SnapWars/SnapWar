@@ -9,9 +9,9 @@ class SWMainViewController: UIViewController {
     
     fileprivate func setup() {
         let routeToSelector = [
-            SWRouteType.auth: #selector(toAuthController),
             SWRouteType.gallery: #selector(toGalleryController),
             SWRouteType.createWar: #selector(toCreateWarController),
+            SWRouteType.account: #selector(toAccountController)
         ]
         
         view?.backgroundColor = SWColorType.black
@@ -42,8 +42,8 @@ class SWMainViewController: UIViewController {
     }
     
     @objc
-    fileprivate func toAuthController() {
-        self.navigationController?.pushViewController(SWAuthViewController(), animated: true)
+    fileprivate func toAccountController() {
+        self.navigationController?.pushViewController(SWAccountViewController(), animated: true)
     }
     
     @objc

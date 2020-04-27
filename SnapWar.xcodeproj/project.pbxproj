@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		36C35085E552C5C9C714B183 /* Pods_SnapWarShareExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DF35304000178163EBDA41F /* Pods_SnapWarShareExtension.framework */; };
+		5D0712772456B46600276C35 /* SWAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0712762456B46600276C35 /* SWAccountViewController.swift */; };
+		5D0712792456B4FA00276C35 /* SWWarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0712782456B4FA00276C35 /* SWWarViewController.swift */; };
 		5DA15B92244C2734005C7448 /* SWShareNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA15B91244C2734005C7448 /* SWShareNavViewController.swift */; };
 		5DA15B94244C3487005C7448 /* SWSharePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA15B93244C3487005C7448 /* SWSharePageViewController.swift */; };
 		5DA15B96244C34A1005C7448 /* SWSharePageViewEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA15B95244C34A1005C7448 /* SWSharePageViewEntryViewController.swift */; };
@@ -78,6 +80,8 @@
 /* Begin PBXFileReference section */
 		4042874C3392CAA9EA2FBC03 /* Pods-SnapWar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapWar.debug.xcconfig"; path = "Target Support Files/Pods-SnapWar/Pods-SnapWar.debug.xcconfig"; sourceTree = "<group>"; };
 		4FCE845FF71A1EDA7017B657 /* Pods-SnapWarShareExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapWarShareExtension.release.xcconfig"; path = "Target Support Files/Pods-SnapWarShareExtension/Pods-SnapWarShareExtension.release.xcconfig"; sourceTree = "<group>"; };
+		5D0712762456B46600276C35 /* SWAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWAccountViewController.swift; sourceTree = "<group>"; };
+		5D0712782456B4FA00276C35 /* SWWarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWWarViewController.swift; sourceTree = "<group>"; };
 		5DA15B91244C2734005C7448 /* SWShareNavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWShareNavViewController.swift; sourceTree = "<group>"; };
 		5DA15B93244C3487005C7448 /* SWSharePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWSharePageViewController.swift; sourceTree = "<group>"; };
 		5DA15B95244C34A1005C7448 /* SWSharePageViewEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWSharePageViewEntryViewController.swift; sourceTree = "<group>"; };
@@ -227,13 +231,15 @@
 		90BEDE85243BB199003BC12D /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				5D0712762456B46600276C35 /* SWAccountViewController.swift */,
 				9044C84D243D0D640054152B /* SWAuthViewController.swift */,
-				903CC74C243FBBB700FA431D /* SWCreateWarViewController.swift */,
-				90EF0A882442467E006433E5 /* SWMainNavViewController.swift */,
-				903CC74A243FBA0C00FA431D /* SWGalleryViewController.swift */,
-				90BEDE74243BAAC7003BC12D /* SWMainViewController.swift */,
 				90B977DF2443A24600ADBF17 /* SWBattleViewController.swift */,
+				903CC74C243FBBB700FA431D /* SWCreateWarViewController.swift */,
 				908F3952244B7CA800D619B2 /* SWFullScreenImageViewController.swift */,
+				903CC74A243FBA0C00FA431D /* SWGalleryViewController.swift */,
+				90EF0A882442467E006433E5 /* SWMainNavViewController.swift */,
+				90BEDE74243BAAC7003BC12D /* SWMainViewController.swift */,
+				5D0712782456B4FA00276C35 /* SWWarViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -453,6 +459,7 @@
 				90BEDE9C243BD400003BC12D /* SWFontType.swift in Sources */,
 				90EF3BA724465DD200F37F9A /* SWImagePreview.swift in Sources */,
 				909AE0A62450F61800BE65BB /* SWPrimaryButton.swift in Sources */,
+				5D0712772456B46600276C35 /* SWAccountViewController.swift in Sources */,
 				908F3953244B7CA800D619B2 /* SWFullScreenImageViewController.swift in Sources */,
 				9098FED9244C95FE00C2C254 /* SWMainNavViewController.swift in Sources */,
 				5DA15B9E24551BAA005C7448 /* SWLoginStatusObserver.swift in Sources */,
@@ -460,6 +467,7 @@
 				903CC74D243FBBB700FA431D /* SWCreateWarViewController.swift in Sources */,
 				90BEDE75243BAAC7003BC12D /* SWMainViewController.swift in Sources */,
 				909AE0A42450F51200BE65BB /* SWButton.swift in Sources */,
+				5D0712792456B4FA00276C35 /* SWWarViewController.swift in Sources */,
 				90D94FCD24539C7B0023CFDC /* SWLoginButton.swift in Sources */,
 				9098FED7244C90F000C2C254 /* SWTextIField.swift in Sources */,
 				90ADFA42244B365A00636DF2 /* UIWindow.swift in Sources */,

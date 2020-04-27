@@ -10,27 +10,19 @@ class SWMainNavViewController: UITabBarController {
     
     fileprivate func setup() {
 
-        let mainController = SWMainViewController()
-        mainController.tabBarItem = UITabBarItem(tabBarSystemItem: .contacts, tag: 0)
-        
-        let authController = SWAuthViewController()
-        authController.tabBarItem = UITabBarItem(tabBarSystemItem: .featured, tag: 1)
-        
         let galleryController = SWGalleryViewController()
-        galleryController.tabBarItem = UITabBarItem(tabBarSystemItem: .downloads, tag: 2)
+        galleryController.tabBarItem = UITabBarItem(tabBarSystemItem: .featured, tag: 0)
         
-        let createWarController = SWCreateWarViewController()
-        createWarController.tabBarItem = UITabBarItem(tabBarSystemItem: .bookmarks, tag: 3)
+        let warController = SWWarViewController()
+        warController.tabBarItem = UITabBarItem(tabBarSystemItem: .featured, tag: 1)
         
-        let battleViewController = SWBattleViewController()
-        battleViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 4)
+        let accountController = SWAccountViewController()
+        accountController.tabBarItem = UITabBarItem(tabBarSystemItem: .downloads, tag: 2)
         
         viewControllers = [
-            authController,
-            createWarController, 
-            battleViewController,
-            mainController,
             galleryController,
+            warController,
+            accountController
         ]
     }
 }

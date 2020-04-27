@@ -10,13 +10,25 @@ class SWMainNavViewController: UITabBarController {
     
     fileprivate func setup() {
         let galleryController = SWGalleryViewController()
-        galleryController.tabBarItem = UITabBarItem(tabBarSystemItem: .featured, tag: 0)
+        
+        let galleryTabBarItem = UITabBarItem()
+        galleryTabBarItem.image = UIImage.init(named: "gallery-unfilled")
+        galleryTabBarItem.selectedImage = UIImage.init(named: "gallery-filled")
+        galleryController.tabBarItem = galleryTabBarItem
         
         let warController = SWWarViewController()
-        warController.tabBarItem = UITabBarItem(tabBarSystemItem: .featured, tag: 1)
+        
+        let warTabBarItem = UITabBarItem()
+        warTabBarItem.image = UIImage.init(named: "war-unfilled")
+        warTabBarItem.selectedImage = UIImage.init(named: "war-filled")
+        warController.tabBarItem = warTabBarItem
         
         let accountController = SWAccountViewController()
-        accountController.tabBarItem = UITabBarItem(tabBarSystemItem: .downloads, tag: 2)
+        
+        let accountTabBarItem = UITabBarItem()
+        accountTabBarItem.image = UIImage.init(named: "account-unfilled")
+        accountTabBarItem.selectedImage = UIImage.init(named: "account-filled")
+        accountController.tabBarItem = accountTabBarItem
         
         viewControllers = [
             galleryController,

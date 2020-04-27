@@ -4,13 +4,19 @@ class SWWarViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        view?.backgroundColor = UIColor.white
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
         navigationController?.setNavigationBarHidden(false, animated: false)
         
-        view?.backgroundColor = UIColor.yellow
-        
         navigationController?.navigationBar.topItem?.rightBarButtonItem =
-            UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(onAdd))
+        UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(onAdd))
+        
+        navigationController?.navigationBar.topItem?.title = "War"
     }
     
     @objc

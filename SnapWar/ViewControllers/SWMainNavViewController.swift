@@ -9,28 +9,27 @@ class SWMainNavViewController: UITabBarController {
     }
     
     fileprivate func setup() {
-
-        let mainController = SWMainViewController()
-        mainController.tabBarItem = UITabBarItem(tabBarSystemItem: .contacts, tag: 0)
+        let galleryViewController = SWGalleryViewController()
+        let warViewController = SWWarViewController()
+        let accountViewController = SWAccountViewController()
         
-        let authController = SWAuthViewController()
-        authController.tabBarItem = UITabBarItem(tabBarSystemItem: .featured, tag: 1)
+        let iconBaseNameToControllerMapping = [
+            "gallery": galleryViewController,
+            "war": warViewController,
+            "account": accountViewController
+        ]
         
-        let galleryController = SWGalleryViewController()
-        galleryController.tabBarItem = UITabBarItem(tabBarSystemItem: .downloads, tag: 2)
-        
-        let createWarController = SWCreateWarViewController()
-        createWarController.tabBarItem = UITabBarItem(tabBarSystemItem: .bookmarks, tag: 3)
-        
-        let battleViewController = SWBattleViewController()
-        battleViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 4)
+        for (iconBaseName, controller) in iconBaseNameToControllerMapping {
+            let item = UITabBarItem()
+            item.image = UIImage.init(named: iconBaseName + "-unfilled")
+            item.selectedImage = UIImage.init(named: iconBaseName + "-filled")
+            controller.tabBarItem = item
+        }
         
         viewControllers = [
-            authController,
-            createWarController, 
-            battleViewController,
-            mainController,
-            galleryController,
+            galleryViewController,
+            warViewController,
+            accountViewController
         ]
     }
 }

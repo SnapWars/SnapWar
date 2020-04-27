@@ -7,17 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		36C35085E552C5C9C714B183 /* Pods_SnapWarShareExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DF35304000178163EBDA41F /* Pods_SnapWarShareExtension.framework */; };
+		0C79E401895314839EE27301 /* Pods_SnapWar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F3B2780F745A616EC8A4C2C /* Pods_SnapWar.framework */; };
+		5D0712772456B46600276C35 /* SWAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0712762456B46600276C35 /* SWAccountViewController.swift */; };
+		5D0712792456B4FA00276C35 /* SWWarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0712782456B4FA00276C35 /* SWWarViewController.swift */; };
 		5DA15B92244C2734005C7448 /* SWShareNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA15B91244C2734005C7448 /* SWShareNavViewController.swift */; };
 		5DA15B94244C3487005C7448 /* SWSharePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA15B93244C3487005C7448 /* SWSharePageViewController.swift */; };
 		5DA15B96244C34A1005C7448 /* SWSharePageViewEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA15B95244C34A1005C7448 /* SWSharePageViewEntryViewController.swift */; };
 		5DA15B98244D7643005C7448 /* SWSharePageViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA15B97244D7643005C7448 /* SWSharePageViewManager.swift */; };
 		5DA15B9A244D768C005C7448 /* SWSharePageViewEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA15B99244D768C005C7448 /* SWSharePageViewEntry.swift */; };
 		5DA15B9E24551BAA005C7448 /* SWLoginStatusObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA15B9D24551BAA005C7448 /* SWLoginStatusObserver.swift */; };
-		5DC7CA6A24419E6100A4431E /* SWRouteType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC7CA6924419E6100A4431E /* SWRouteType.swift */; };
 		5DC7CA722446F4CF00A4431E /* SWShareContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC7CA712446F4CF00A4431E /* SWShareContainerViewController.swift */; };
 		5DC7CA792446F4CF00A4431E /* SnapWarShareExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5DC7CA6F2446F4CF00A4431E /* SnapWarShareExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		90163A2B2452469300E70EF7 /* Pods_SnapWar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97AF3671A5EAFBF62BC4C6C8 /* Pods_SnapWar.framework */; };
 		90163A2C2452469300E70EF7 /* Pods_SnapWar.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 97AF3671A5EAFBF62BC4C6C8 /* Pods_SnapWar.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		902FFF21244E509B0007DE4D /* SWPasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902FFF20244E509B0007DE4D /* SWPasswordTextField.swift */; };
 		903CC74B243FBA0C00FA431D /* SWGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903CC74A243FBA0C00FA431D /* SWGalleryViewController.swift */; };
@@ -32,12 +32,12 @@
 		90ADFA42244B365A00636DF2 /* UIWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90ADFA41244B365A00636DF2 /* UIWindow.swift */; };
 		90B977E02443A24600ADBF17 /* SWBattleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B977DF2443A24600ADBF17 /* SWBattleViewController.swift */; };
 		90BEDE73243BAAC7003BC12D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BEDE72243BAAC7003BC12D /* AppDelegate.swift */; };
-		90BEDE75243BAAC7003BC12D /* SWMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BEDE74243BAAC7003BC12D /* SWMainViewController.swift */; };
 		90BEDE7A243BAAC9003BC12D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90BEDE79243BAAC9003BC12D /* Assets.xcassets */; };
 		90BEDE9A243BCFEF003BC12D /* SWColorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BEDE99243BCFEF003BC12D /* SWColorType.swift */; };
 		90BEDE9C243BD400003BC12D /* SWFontType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BEDE9B243BD400003BC12D /* SWFontType.swift */; };
 		90D94FCD24539C7B0023CFDC /* SWLoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D94FCC24539C7B0023CFDC /* SWLoginButton.swift */; };
 		90EF3BA724465DD200F37F9A /* SWImagePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EF3BA624465DD200F37F9A /* SWImagePreview.swift */; };
+		DD3382BAA132254B2D9B2776 /* Pods_SnapWarShareExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D559EE802F5A4C18E8E05B5 /* Pods_SnapWarShareExtension.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,14 +77,21 @@
 
 /* Begin PBXFileReference section */
 		4042874C3392CAA9EA2FBC03 /* Pods-SnapWar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapWar.debug.xcconfig"; path = "Target Support Files/Pods-SnapWar/Pods-SnapWar.debug.xcconfig"; sourceTree = "<group>"; };
+		4D559EE802F5A4C18E8E05B5 /* Pods_SnapWarShareExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnapWarShareExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F3B2780F745A616EC8A4C2C /* Pods_SnapWar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnapWar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FCE845FF71A1EDA7017B657 /* Pods-SnapWarShareExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapWarShareExtension.release.xcconfig"; path = "Target Support Files/Pods-SnapWarShareExtension/Pods-SnapWarShareExtension.release.xcconfig"; sourceTree = "<group>"; };
+		5D0712762456B46600276C35 /* SWAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWAccountViewController.swift; sourceTree = "<group>"; };
+		5D0712782456B4FA00276C35 /* SWWarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWWarViewController.swift; sourceTree = "<group>"; };
+		5D07127B2456C7D500276C35 /* SCSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SCSDKLoginKit.framework; path = Pods/SnapSDK/SCSDKLoginKit.framework; sourceTree = "<group>"; };
+		5D07127C2456C7D500276C35 /* SCSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SCSDKCoreKit.framework; path = Pods/SnapSDK/SCSDKCoreKit.framework; sourceTree = "<group>"; };
+		5D07127F2456C7F500276C35 /* SCSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SCSDKCoreKit.framework; path = Pods/SnapSDK/SCSDKCoreKit.framework; sourceTree = "<group>"; };
+		5D0712802456C7F500276C35 /* SCSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SCSDKLoginKit.framework; path = Pods/SnapSDK/SCSDKLoginKit.framework; sourceTree = "<group>"; };
 		5DA15B91244C2734005C7448 /* SWShareNavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWShareNavViewController.swift; sourceTree = "<group>"; };
 		5DA15B93244C3487005C7448 /* SWSharePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWSharePageViewController.swift; sourceTree = "<group>"; };
 		5DA15B95244C34A1005C7448 /* SWSharePageViewEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWSharePageViewEntryViewController.swift; sourceTree = "<group>"; };
 		5DA15B97244D7643005C7448 /* SWSharePageViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWSharePageViewManager.swift; sourceTree = "<group>"; };
 		5DA15B99244D768C005C7448 /* SWSharePageViewEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWSharePageViewEntry.swift; sourceTree = "<group>"; };
 		5DA15B9D24551BAA005C7448 /* SWLoginStatusObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWLoginStatusObserver.swift; sourceTree = "<group>"; };
-		5DC7CA6924419E6100A4431E /* SWRouteType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWRouteType.swift; sourceTree = "<group>"; };
 		5DC7CA6F2446F4CF00A4431E /* SnapWarShareExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SnapWarShareExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DC7CA712446F4CF00A4431E /* SWShareContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWShareContainerViewController.swift; sourceTree = "<group>"; };
 		5DC7CA762446F4CF00A4431E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -103,7 +110,6 @@
 		90B977DF2443A24600ADBF17 /* SWBattleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWBattleViewController.swift; sourceTree = "<group>"; };
 		90BEDE6F243BAAC7003BC12D /* SnapWar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapWar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90BEDE72243BAAC7003BC12D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		90BEDE74243BAAC7003BC12D /* SWMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWMainViewController.swift; sourceTree = "<group>"; };
 		90BEDE79243BAAC9003BC12D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		90BEDE7E243BAAC9003BC12D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		90BEDE99243BCFEF003BC12D /* SWColorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWColorType.swift; sourceTree = "<group>"; };
@@ -112,7 +118,6 @@
 		90EF0A882442467E006433E5 /* SWMainNavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWMainNavViewController.swift; sourceTree = "<group>"; };
 		90EF3BA624465DD200F37F9A /* SWImagePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWImagePreview.swift; sourceTree = "<group>"; };
 		97AF3671A5EAFBF62BC4C6C8 /* Pods_SnapWar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnapWar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9DF35304000178163EBDA41F /* Pods_SnapWarShareExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnapWarShareExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F18BC592C403DA0FBE8E6D63 /* Pods-SnapWar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapWar.release.xcconfig"; path = "Target Support Files/Pods-SnapWar/Pods-SnapWar.release.xcconfig"; sourceTree = "<group>"; };
 		FE9D30E9FA0E1EFFFC602342 /* Pods-SnapWarShareExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapWarShareExtension.debug.xcconfig"; path = "Target Support Files/Pods-SnapWarShareExtension/Pods-SnapWarShareExtension.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -122,7 +127,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36C35085E552C5C9C714B183 /* Pods_SnapWarShareExtension.framework in Frameworks */,
+				DD3382BAA132254B2D9B2776 /* Pods_SnapWarShareExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,7 +135,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90163A2B2452469300E70EF7 /* Pods_SnapWar.framework in Frameworks */,
+				0C79E401895314839EE27301 /* Pods_SnapWar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,10 +145,20 @@
 		0A7A2336496E655E28D8816B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				97AF3671A5EAFBF62BC4C6C8 /* Pods_SnapWar.framework */,
-				9DF35304000178163EBDA41F /* Pods_SnapWarShareExtension.framework */,
+				5D07127C2456C7D500276C35 /* SCSDKCoreKit.framework */,
+				5D07127B2456C7D500276C35 /* SCSDKLoginKit.framework */,
+				4F3B2780F745A616EC8A4C2C /* Pods_SnapWar.framework */,
+				4D559EE802F5A4C18E8E05B5 /* Pods_SnapWarShareExtension.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5D0712852456C9EE00276C35 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				97AF3671A5EAFBF62BC4C6C8 /* Pods_SnapWar.framework */,
+			);
+			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 		5DA15B9C24551B99005C7448 /* Auth */ = {
@@ -191,11 +206,14 @@
 		90BEDE66243BAAC7003BC12D = {
 			isa = PBXGroup;
 			children = (
+				5D07127F2456C7F500276C35 /* SCSDKCoreKit.framework */,
+				5D0712802456C7F500276C35 /* SCSDKLoginKit.framework */,
 				90BEDE70243BAAC7003BC12D /* Products */,
 				90BEDE71243BAAC7003BC12D /* SnapWar */,
 				5DC7CA702446F4CF00A4431E /* SnapWarShareExtension */,
 				74179069F4B42F95F3541021 /* Pods */,
 				0A7A2336496E655E28D8816B /* Frameworks */,
+				5D0712852456C9EE00276C35 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -227,13 +245,14 @@
 		90BEDE85243BB199003BC12D /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				5D0712762456B46600276C35 /* SWAccountViewController.swift */,
 				9044C84D243D0D640054152B /* SWAuthViewController.swift */,
-				903CC74C243FBBB700FA431D /* SWCreateWarViewController.swift */,
-				90EF0A882442467E006433E5 /* SWMainNavViewController.swift */,
-				903CC74A243FBA0C00FA431D /* SWGalleryViewController.swift */,
-				90BEDE74243BAAC7003BC12D /* SWMainViewController.swift */,
 				90B977DF2443A24600ADBF17 /* SWBattleViewController.swift */,
+				903CC74C243FBBB700FA431D /* SWCreateWarViewController.swift */,
 				908F3952244B7CA800D619B2 /* SWFullScreenImageViewController.swift */,
+				903CC74A243FBA0C00FA431D /* SWGalleryViewController.swift */,
+				90EF0A882442467E006433E5 /* SWMainNavViewController.swift */,
+				5D0712782456B4FA00276C35 /* SWWarViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -265,7 +284,6 @@
 			children = (
 				90BEDE99243BCFEF003BC12D /* SWColorType.swift */,
 				90BEDE9B243BD400003BC12D /* SWFontType.swift */,
-				5DC7CA6924419E6100A4431E /* SWRouteType.swift */,
 			);
 			path = Types;
 			sourceTree = "<group>";
@@ -453,13 +471,13 @@
 				90BEDE9C243BD400003BC12D /* SWFontType.swift in Sources */,
 				90EF3BA724465DD200F37F9A /* SWImagePreview.swift in Sources */,
 				909AE0A62450F61800BE65BB /* SWPrimaryButton.swift in Sources */,
+				5D0712772456B46600276C35 /* SWAccountViewController.swift in Sources */,
 				908F3953244B7CA800D619B2 /* SWFullScreenImageViewController.swift in Sources */,
 				9098FED9244C95FE00C2C254 /* SWMainNavViewController.swift in Sources */,
 				5DA15B9E24551BAA005C7448 /* SWLoginStatusObserver.swift in Sources */,
-				5DC7CA6A24419E6100A4431E /* SWRouteType.swift in Sources */,
 				903CC74D243FBBB700FA431D /* SWCreateWarViewController.swift in Sources */,
-				90BEDE75243BAAC7003BC12D /* SWMainViewController.swift in Sources */,
 				909AE0A42450F51200BE65BB /* SWButton.swift in Sources */,
+				5D0712792456B4FA00276C35 /* SWWarViewController.swift in Sources */,
 				90D94FCD24539C7B0023CFDC /* SWLoginButton.swift in Sources */,
 				9098FED7244C90F000C2C254 /* SWTextIField.swift in Sources */,
 				90ADFA42244B365A00636DF2 /* UIWindow.swift in Sources */,
@@ -653,6 +671,10 @@
 				CODE_SIGN_ENTITLEMENTS = SnapWar/SnapWar.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R6552SUGAZ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/SnapSDK",
+				);
 				INFOPLIST_FILE = SnapWar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -674,6 +696,10 @@
 				CODE_SIGN_ENTITLEMENTS = SnapWar/SnapWar.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R6552SUGAZ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/SnapSDK",
+				);
 				INFOPLIST_FILE = SnapWar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

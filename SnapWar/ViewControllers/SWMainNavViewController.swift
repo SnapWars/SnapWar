@@ -9,7 +9,6 @@ class SWMainNavViewController: UITabBarController {
     }
     
     fileprivate func setup() {
-
         let galleryController = SWGalleryViewController()
         galleryController.tabBarItem = UITabBarItem(tabBarSystemItem: .featured, tag: 0)
         

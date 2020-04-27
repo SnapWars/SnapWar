@@ -34,7 +34,6 @@
 		90ADFA42244B365A00636DF2 /* UIWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90ADFA41244B365A00636DF2 /* UIWindow.swift */; };
 		90B977E02443A24600ADBF17 /* SWBattleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B977DF2443A24600ADBF17 /* SWBattleViewController.swift */; };
 		90BEDE73243BAAC7003BC12D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BEDE72243BAAC7003BC12D /* AppDelegate.swift */; };
-		90BEDE75243BAAC7003BC12D /* SWMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BEDE74243BAAC7003BC12D /* SWMainViewController.swift */; };
 		90BEDE7A243BAAC9003BC12D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90BEDE79243BAAC9003BC12D /* Assets.xcassets */; };
 		90BEDE9A243BCFEF003BC12D /* SWColorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BEDE99243BCFEF003BC12D /* SWColorType.swift */; };
 		90BEDE9C243BD400003BC12D /* SWFontType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BEDE9B243BD400003BC12D /* SWFontType.swift */; };
@@ -107,7 +106,6 @@
 		90B977DF2443A24600ADBF17 /* SWBattleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWBattleViewController.swift; sourceTree = "<group>"; };
 		90BEDE6F243BAAC7003BC12D /* SnapWar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapWar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90BEDE72243BAAC7003BC12D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		90BEDE74243BAAC7003BC12D /* SWMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWMainViewController.swift; sourceTree = "<group>"; };
 		90BEDE79243BAAC9003BC12D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		90BEDE7E243BAAC9003BC12D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		90BEDE99243BCFEF003BC12D /* SWColorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWColorType.swift; sourceTree = "<group>"; };
@@ -238,7 +236,6 @@
 				908F3952244B7CA800D619B2 /* SWFullScreenImageViewController.swift */,
 				903CC74A243FBA0C00FA431D /* SWGalleryViewController.swift */,
 				90EF0A882442467E006433E5 /* SWMainNavViewController.swift */,
-				90BEDE74243BAAC7003BC12D /* SWMainViewController.swift */,
 				5D0712782456B4FA00276C35 /* SWWarViewController.swift */,
 			);
 			path = ViewControllers;
@@ -465,7 +462,6 @@
 				5DA15B9E24551BAA005C7448 /* SWLoginStatusObserver.swift in Sources */,
 				5DC7CA6A24419E6100A4431E /* SWRouteType.swift in Sources */,
 				903CC74D243FBBB700FA431D /* SWCreateWarViewController.swift in Sources */,
-				90BEDE75243BAAC7003BC12D /* SWMainViewController.swift in Sources */,
 				909AE0A42450F51200BE65BB /* SWButton.swift in Sources */,
 				5D0712792456B4FA00276C35 /* SWWarViewController.swift in Sources */,
 				90D94FCD24539C7B0023CFDC /* SWLoginButton.swift in Sources */,

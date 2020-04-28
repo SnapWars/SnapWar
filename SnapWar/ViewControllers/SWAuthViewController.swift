@@ -2,35 +2,31 @@ import SCSDKLoginKit
 import UIKit
 
 class SWAuthViewController: UIViewController {
-    fileprivate let formContainer = UIStackView()
     fileprivate let loginButton = SWLoginButton()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view?.backgroundColor = SWColorType.white
+        view?.backgroundColor = SWColorType.snapchatYellow
+        modalPresentationStyle = .fullScreen
         setup()
     }
 
     fileprivate func setup() {
-        view.addSubview(formContainer)
-
-        formContainer.axis = .vertical
-        formContainer.spacing = 10
-        formContainer.alignment = .fill
-
-        let horizontalMargin:CGFloat = 10.0
-        formContainer.translatesAutoresizingMaskIntoConstraints = false
-        formContainer.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
-        formContainer.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor).isActive = true
-        formContainer.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor).isActive = true
-        formContainer.isLayoutMarginsRelativeArrangement = true
-        formContainer.layoutMargins = UIEdgeInsets(top: 0, left: horizontalMargin, bottom: 0, right: horizontalMargin)
-
+        view.addSubview(loginButton)
+        
+        loginButton.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            loginButton.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
+            loginButton.centerYAnchor.constraint(equalTo: self.view.centerYAnchor),
+        ])
         loginButton.addTarget(self, action: #selector(login(_:)), for: .touchUpInside)
-        formContainer.addArrangedSubview(loginButton)
 
         SCSDKLoginClient.addLoginStatusObserver(SWLoginStatusObserver.instance)
+    }
+    
+    func close(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
     }
     
     @objc
@@ -57,7 +53,8 @@ class SWAuthViewController: UIViewController {
                        let jsonData = try? JSONSerialization.data(withJSONObject: userInfo, options: .prettyPrinted) {
                         if let data = String(data: jsonData, encoding: .ascii) {
                             print("Fetched user info: " + data)
-                            // TODO: Assign data to user model
+                            // TODO: Assign data to user
+                           
                         }
                     }
             }) { (error, isUserLoggedOut) in

@@ -3,6 +3,7 @@ import UIKit
 
 class SWAuthViewController: UIViewController {
     fileprivate let loginButton = SWLoginButton()
+    let userEntity = SWUserEntity.shared
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +26,7 @@ class SWAuthViewController: UIViewController {
         SCSDKLoginClient.addLoginStatusObserver(SWLoginStatusObserver.instance)
     }
     
-    func close(_ sender: Any) {
+    func close() {
         self.dismiss(animated: true, completion: nil)
     }
     
@@ -67,13 +68,17 @@ class SWAuthViewController: UIViewController {
                        let me = data["me"] as? [String: Any] {
                         if let bitmoji = me["bitmoji"] as? [String: Any],
                             let avatarURL = bitmoji["avatar"] as? String {
-                            // Use avatar URL
+                            self.userEntity.avatarURL = avatarURL
                         }
 
                         if let displayName = me["displayName"] as? String,
                            let externalId = me["externalId"] as? String {
-                            // Use display name, external id
+                            self.userEntity.displayName = displayName
+                            self.userEntity.externalId = externalId
                         }
+                    }
+                    DispatchQueue.main.async {
+                        self.close()
                     }
                }) { (error, isUserLoggedOut) in
                    print(error?.localizedDescription ?? "")
@@ -82,22 +87,5 @@ class SWAuthViewController: UIViewController {
     
     fileprivate func goToLoginConfirm(_ userEntity: Any) {
         print("goToLoginConfirm", userEntity)
-    }
-}
-
-struct UserEntity: Codable {
-    let data: [String: String]
-    let me: [String: String]
-    let bitmoji: [String: String]
-    let avatar: String
-    let name: String
-    
-    enum CodingKeys: String, CodingKey {
-        case data = "data"
-        case me = "me"
-        case bitmoji = "bitmoji"
-        case name = "displayName"
-        case avatar = "avatar"
-        
     }
 }

@@ -9,7 +9,10 @@ class SWMainNavViewController: UITabBarController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        present(SWAuthViewController(), animated: true, completion: nil)
+        if(SWUserEntity.shared.externalId == "") {
+            present(SWAuthViewController(), animated: true, completion: nil)
+        }
+        
     }
     
     fileprivate func setup() {

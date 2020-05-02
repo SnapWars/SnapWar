@@ -8,6 +8,13 @@ class SWMainNavViewController: UITabBarController {
         setup()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        if(!SWUserEntity.instance.isLoggedIn()) {
+            present(SWAuthViewController(), animated: true, completion: nil)
+        }
+        
+    }
+    
     fileprivate func setup() {
         let galleryViewController = SWGalleryViewController()
         let warViewController = SWWarViewController()

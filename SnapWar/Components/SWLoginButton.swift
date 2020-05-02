@@ -1,7 +1,7 @@
 import UIKit
 
 class SWLoginButton: SWButton {
-    let padding = UIEdgeInsets(top: 10, left: 15, bottom: 10, right: 15)
+    let padding = UIEdgeInsets(top: 10, left: 30, bottom: 10, right: 30)
     
     required init() {
         super.init(frame: .zero)
@@ -15,8 +15,8 @@ class SWLoginButton: SWButton {
     }
 
     func setupStyles() {
-        backgroundColor = SWColorType.snapchatYellow
-        setTitleColor(SWColorType.black, for: .normal)
+        backgroundColor = SWColorType.snapchatBlue
+        setTitleColor(SWColorType.white, for: .normal)
         frame.size.height = 30
         layer.cornerRadius = 5
         contentEdgeInsets = padding

@@ -24,6 +24,7 @@
 		903CC74D243FBBB700FA431D /* SWCreateWarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903CC74C243FBBB700FA431D /* SWCreateWarViewController.swift */; };
 		903CC751243FC62900FA431D /* SWNavButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903CC750243FC62900FA431D /* SWNavButton.swift */; };
 		9044C84E243D0D640054152B /* SWAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9044C84D243D0D640054152B /* SWAuthViewController.swift */; };
+		9063CD37245CA43600C9D744 /* SWUserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9063CD36245CA43600C9D744 /* SWUserEntity.swift */; };
 		908F3953244B7CA800D619B2 /* SWFullScreenImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908F3952244B7CA800D619B2 /* SWFullScreenImageViewController.swift */; };
 		9098FED7244C90F000C2C254 /* SWTextIField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9098FED6244C90F000C2C254 /* SWTextIField.swift */; };
 		9098FED9244C95FE00C2C254 /* SWMainNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EF0A882442467E006433E5 /* SWMainNavViewController.swift */; };
@@ -102,6 +103,7 @@
 		903CC74C243FBBB700FA431D /* SWCreateWarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWCreateWarViewController.swift; sourceTree = "<group>"; };
 		903CC750243FC62900FA431D /* SWNavButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWNavButton.swift; sourceTree = "<group>"; };
 		9044C84D243D0D640054152B /* SWAuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWAuthViewController.swift; sourceTree = "<group>"; };
+		9063CD36245CA43600C9D744 /* SWUserEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWUserEntity.swift; sourceTree = "<group>"; };
 		908F3952244B7CA800D619B2 /* SWFullScreenImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWFullScreenImageViewController.swift; sourceTree = "<group>"; };
 		9098FED6244C90F000C2C254 /* SWTextIField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWTextIField.swift; sourceTree = "<group>"; };
 		909AE0A32450F51200BE65BB /* SWButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWButton.swift; sourceTree = "<group>"; };
@@ -195,6 +197,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		9063CD38245CA97300C9D744 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				9063CD36245CA43600C9D744 /* SWUserEntity.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
 		90ADFA43244B36CF00636DF2 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -229,6 +239,7 @@
 		90BEDE71243BAAC7003BC12D /* SnapWar */ = {
 			isa = PBXGroup;
 			children = (
+				9063CD38245CA97300C9D744 /* Entities */,
 				5DA15B9C24551B99005C7448 /* Auth */,
 				90ADFA43244B36CF00636DF2 /* Extensions */,
 				5DC7CA7F2446F59E00A4431E /* SnapWar.entitlements */,
@@ -483,6 +494,7 @@
 				90ADFA42244B365A00636DF2 /* UIWindow.swift in Sources */,
 				90BEDE9A243BCFEF003BC12D /* SWColorType.swift in Sources */,
 				902FFF21244E509B0007DE4D /* SWPasswordTextField.swift in Sources */,
+				9063CD37245CA43600C9D744 /* SWUserEntity.swift in Sources */,
 				90B977E02443A24600ADBF17 /* SWBattleViewController.swift in Sources */,
 				903CC74B243FBA0C00FA431D /* SWGalleryViewController.swift in Sources */,
 				9044C84E243D0D640054152B /* SWAuthViewController.swift in Sources */,

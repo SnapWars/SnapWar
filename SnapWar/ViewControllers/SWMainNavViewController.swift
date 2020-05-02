@@ -9,7 +9,7 @@ class SWMainNavViewController: UITabBarController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        if(SWUserEntity.shared.externalId == "") {
+        if(!SWUserEntity.instance.isLoggedIn()) {
             present(SWAuthViewController(), animated: true, completion: nil)
         }
         

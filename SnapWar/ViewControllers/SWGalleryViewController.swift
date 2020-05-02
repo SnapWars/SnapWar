@@ -6,8 +6,6 @@ class SWGalleryViewController: UIViewController {
         super.viewDidLoad()
 
         view?.backgroundColor = UIColor.white
-        
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {

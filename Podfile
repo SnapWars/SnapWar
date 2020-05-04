@@ -6,7 +6,7 @@ target 'SnapWar' do
   use_frameworks!
 
   # Pods for SnapWar
-  pod 'SnapSDK', :subspecs => ['SCSDKLoginKit']
+  pod 'SnapSDK', :subspecs => ['SCSDKLoginKit', 'SCSDKBitmojiKit']
 
 end
 

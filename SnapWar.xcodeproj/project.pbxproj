@@ -25,6 +25,7 @@
 		903CC751243FC62900FA431D /* SWNavButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903CC750243FC62900FA431D /* SWNavButton.swift */; };
 		9044C84E243D0D640054152B /* SWAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9044C84D243D0D640054152B /* SWAuthViewController.swift */; };
 		9063CD37245CA43600C9D744 /* SWUserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9063CD36245CA43600C9D744 /* SWUserEntity.swift */; };
+		906604792461ED890050C946 /* SWSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906604782461ED890050C946 /* SWSwitch.swift */; };
 		908BAE892460A9A300E9EB29 /* SWAvatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908BAE882460A9A300E9EB29 /* SWAvatar.swift */; };
 		908F3953244B7CA800D619B2 /* SWFullScreenImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908F3952244B7CA800D619B2 /* SWFullScreenImageViewController.swift */; };
 		9098FED7244C90F000C2C254 /* SWTextIField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9098FED6244C90F000C2C254 /* SWTextIField.swift */; };
@@ -105,6 +106,7 @@
 		903CC750243FC62900FA431D /* SWNavButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWNavButton.swift; sourceTree = "<group>"; };
 		9044C84D243D0D640054152B /* SWAuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWAuthViewController.swift; sourceTree = "<group>"; };
 		9063CD36245CA43600C9D744 /* SWUserEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWUserEntity.swift; sourceTree = "<group>"; };
+		906604782461ED890050C946 /* SWSwitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWSwitch.swift; sourceTree = "<group>"; };
 		908BAE882460A9A300E9EB29 /* SWAvatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWAvatar.swift; sourceTree = "<group>"; };
 		908F3952244B7CA800D619B2 /* SWFullScreenImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWFullScreenImageViewController.swift; sourceTree = "<group>"; };
 		9098FED6244C90F000C2C254 /* SWTextIField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWTextIField.swift; sourceTree = "<group>"; };
@@ -289,6 +291,7 @@
 				903CC750243FC62900FA431D /* SWNavButton.swift */,
 				9098FED6244C90F000C2C254 /* SWTextIField.swift */,
 				909AE0A32450F51200BE65BB /* SWButton.swift */,
+				906604782461ED890050C946 /* SWSwitch.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -488,6 +491,7 @@
 				5D0712772456B46600276C35 /* SWAccountViewController.swift in Sources */,
 				908F3953244B7CA800D619B2 /* SWFullScreenImageViewController.swift in Sources */,
 				9098FED9244C95FE00C2C254 /* SWMainNavViewController.swift in Sources */,
+				906604792461ED890050C946 /* SWSwitch.swift in Sources */,
 				5DA15B9E24551BAA005C7448 /* SWLoginStatusObserver.swift in Sources */,
 				903CC74D243FBBB700FA431D /* SWCreateWarViewController.swift in Sources */,
 				909AE0A42450F51200BE65BB /* SWButton.swift in Sources */,

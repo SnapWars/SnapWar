@@ -34,9 +34,9 @@ class SWMainNavViewController: UITabBarController {
         }
         
         viewControllers = [
+            accountViewController,
             galleryViewController,
             warViewController,
-            accountViewController
         ]
     }
 }

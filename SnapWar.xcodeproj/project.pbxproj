@@ -25,6 +25,8 @@
 		903CC751243FC62900FA431D /* SWNavButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903CC750243FC62900FA431D /* SWNavButton.swift */; };
 		9044C84E243D0D640054152B /* SWAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9044C84D243D0D640054152B /* SWAuthViewController.swift */; };
 		9063CD37245CA43600C9D744 /* SWUserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9063CD36245CA43600C9D744 /* SWUserEntity.swift */; };
+		9066047F246335A10050C946 /* SWTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9066047E246335A10050C946 /* SWTabBarItem.swift */; };
+		9066048124633E950050C946 /* SWTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9066048024633E950050C946 /* SWTabBar.swift */; };
 		908BAE892460A9A300E9EB29 /* SWAvatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908BAE882460A9A300E9EB29 /* SWAvatar.swift */; };
 		908F3953244B7CA800D619B2 /* SWFullScreenImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908F3952244B7CA800D619B2 /* SWFullScreenImageViewController.swift */; };
 		9098FED7244C90F000C2C254 /* SWTextIField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9098FED6244C90F000C2C254 /* SWTextIField.swift */; };
@@ -105,6 +107,8 @@
 		903CC750243FC62900FA431D /* SWNavButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWNavButton.swift; sourceTree = "<group>"; };
 		9044C84D243D0D640054152B /* SWAuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWAuthViewController.swift; sourceTree = "<group>"; };
 		9063CD36245CA43600C9D744 /* SWUserEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWUserEntity.swift; sourceTree = "<group>"; };
+		9066047E246335A10050C946 /* SWTabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWTabBarItem.swift; sourceTree = "<group>"; };
+		9066048024633E950050C946 /* SWTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWTabBar.swift; sourceTree = "<group>"; };
 		908BAE882460A9A300E9EB29 /* SWAvatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWAvatar.swift; sourceTree = "<group>"; };
 		908F3952244B7CA800D619B2 /* SWFullScreenImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWFullScreenImageViewController.swift; sourceTree = "<group>"; };
 		9098FED6244C90F000C2C254 /* SWTextIField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWTextIField.swift; sourceTree = "<group>"; };
@@ -279,6 +283,8 @@
 				909AE0A52450F61800BE65BB /* SWPrimaryButton.swift */,
 				90D94FCC24539C7B0023CFDC /* SWLoginButton.swift */,
 				908BAE882460A9A300E9EB29 /* SWAvatar.swift */,
+				9066047E246335A10050C946 /* SWTabBarItem.swift */,
+				9066048024633E950050C946 /* SWTabBar.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -483,6 +489,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				90BEDE9C243BD400003BC12D /* SWFontType.swift in Sources */,
+				9066047F246335A10050C946 /* SWTabBarItem.swift in Sources */,
 				90EF3BA724465DD200F37F9A /* SWImagePreview.swift in Sources */,
 				909AE0A62450F61800BE65BB /* SWPrimaryButton.swift in Sources */,
 				5D0712772456B46600276C35 /* SWAccountViewController.swift in Sources */,
@@ -504,6 +511,7 @@
 				9044C84E243D0D640054152B /* SWAuthViewController.swift in Sources */,
 				903CC751243FC62900FA431D /* SWNavButton.swift in Sources */,
 				90BEDE73243BAAC7003BC12D /* AppDelegate.swift in Sources */,
+				9066048124633E950050C946 /* SWTabBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

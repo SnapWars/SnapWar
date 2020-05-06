@@ -2,10 +2,13 @@ import UIKit
 
 
 class SWMainNavViewController: UITabBarController {
-
+    let swTabBar: SWTabBar!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        setup()
+        tabBar.isHidden = true
+        //setup()
+        setupCustomBar()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -15,7 +18,18 @@ class SWMainNavViewController: UITabBarController {
         
     }
     
+    fileprivate func setupCustomBar() {
+        
+        
+    }
+    
+    
     fileprivate func setup() {
+        setupTabs()
+        setupStyles()
+    }
+    
+    fileprivate func setupTabs() {
         let galleryViewController = SWGalleryViewController()
         let warViewController = SWWarViewController()
         let accountViewController = SWAccountViewController()
@@ -38,6 +52,15 @@ class SWMainNavViewController: UITabBarController {
             warViewController,
             accountViewController
         ]
+    }
+    
+    fileprivate func setupStyles() {
+        
+        tabBar.isTranslucent = true
+//        tabBar.barStyle = .blackOpaque
+        tabBar.layer.masksToBounds = true
+        tabBar.layer.cornerRadius = 20
+        tabBar.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
     }
 }
 

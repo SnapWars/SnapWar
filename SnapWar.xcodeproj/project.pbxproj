@@ -33,6 +33,7 @@
 		9098FED9244C95FE00C2C254 /* SWMainNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EF0A882442467E006433E5 /* SWMainNavViewController.swift */; };
 		909AE0A42450F51200BE65BB /* SWButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909AE0A32450F51200BE65BB /* SWButton.swift */; };
 		909AE0A62450F61800BE65BB /* SWPrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909AE0A52450F61800BE65BB /* SWPrimaryButton.swift */; };
+		90A9B79A2464A069004A0DF8 /* SWCenterTabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A9B7992464A069004A0DF8 /* SWCenterTabItem.swift */; };
 		90ADFA42244B365A00636DF2 /* UIWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90ADFA41244B365A00636DF2 /* UIWindow.swift */; };
 		90B977E02443A24600ADBF17 /* SWBattleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B977DF2443A24600ADBF17 /* SWBattleViewController.swift */; };
 		90BEDE73243BAAC7003BC12D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BEDE72243BAAC7003BC12D /* AppDelegate.swift */; };
@@ -114,6 +115,7 @@
 		9098FED6244C90F000C2C254 /* SWTextIField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWTextIField.swift; sourceTree = "<group>"; };
 		909AE0A32450F51200BE65BB /* SWButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWButton.swift; sourceTree = "<group>"; };
 		909AE0A52450F61800BE65BB /* SWPrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SWPrimaryButton.swift; path = Common/SWPrimaryButton.swift; sourceTree = "<group>"; };
+		90A9B7992464A069004A0DF8 /* SWCenterTabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWCenterTabItem.swift; sourceTree = "<group>"; };
 		90ADFA41244B365A00636DF2 /* UIWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWindow.swift; sourceTree = "<group>"; };
 		90B977DF2443A24600ADBF17 /* SWBattleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWBattleViewController.swift; sourceTree = "<group>"; };
 		90BEDE6F243BAAC7003BC12D /* SnapWar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapWar.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -285,6 +287,7 @@
 				908BAE882460A9A300E9EB29 /* SWAvatar.swift */,
 				9066047E246335A10050C946 /* SWTabBarItem.swift */,
 				9066048024633E950050C946 /* SWTabBar.swift */,
+				90A9B7992464A069004A0DF8 /* SWCenterTabItem.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -498,6 +501,7 @@
 				5DA15B9E24551BAA005C7448 /* SWLoginStatusObserver.swift in Sources */,
 				903CC74D243FBBB700FA431D /* SWCreateWarViewController.swift in Sources */,
 				909AE0A42450F51200BE65BB /* SWButton.swift in Sources */,
+				90A9B79A2464A069004A0DF8 /* SWCenterTabItem.swift in Sources */,
 				5D0712792456B4FA00276C35 /* SWWarViewController.swift in Sources */,
 				908BAE892460A9A300E9EB29 /* SWAvatar.swift in Sources */,
 				90D94FCD24539C7B0023CFDC /* SWLoginButton.swift in Sources */,

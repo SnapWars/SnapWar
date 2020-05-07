@@ -1,14 +1,10 @@
 import UIKit
 
-
 class SWMainNavViewController: UITabBarController {
-    let swTabBar: SWTabBar!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tabBar.isHidden = true
-        //setup()
-        setupCustomBar()
+        setup()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -18,13 +14,8 @@ class SWMainNavViewController: UITabBarController {
         
     }
     
-    fileprivate func setupCustomBar() {
-        
-        
-    }
-    
-    
     fileprivate func setup() {
+        tabBar.isHidden = true
         setupTabs()
         setupStyles()
     }
@@ -34,17 +25,16 @@ class SWMainNavViewController: UITabBarController {
         let warViewController = SWWarViewController()
         let accountViewController = SWAccountViewController()
         
-        let iconBaseNameToControllerMapping = [
-            "gallery": galleryViewController,
-            "war": warViewController,
-            "account": accountViewController
+        let controllers = [
+            galleryViewController,
+            warViewController,
+            accountViewController
         ]
-        
-        for (iconBaseName, controller) in iconBaseNameToControllerMapping {
+
+        for i in 0..<controllers.count {
             let item = UITabBarItem()
-            item.image = UIImage.init(named: iconBaseName + "-unfilled")
-            item.selectedImage = UIImage.init(named: iconBaseName + "-filled")
-            controller.tabBarItem = item
+            item.tag = i
+            controllers[i].tabBarItem = item
         }
         
         viewControllers = [
@@ -52,12 +42,25 @@ class SWMainNavViewController: UITabBarController {
             warViewController,
             accountViewController
         ]
+        
+        let customTabBar = SWTabBar()
+        view.addSubview(customTabBar)
+        
+        NSLayoutConstraint.activate([
+            customTabBar.leadingAnchor.constraint(equalTo: tabBar.leadingAnchor),
+            customTabBar.trailingAnchor.constraint(equalTo: tabBar.trailingAnchor),
+            customTabBar.topAnchor.constraint(equalTo: tabBar.topAnchor),
+            customTabBar.bottomAnchor.constraint(equalTo: tabBar.bottomAnchor),
+        ])        
+    }
+    
+    @objc
+    fileprivate func switchTab(sender: UIButton) {
+        selectedIndex = sender.tag
     }
     
     fileprivate func setupStyles() {
-        
         tabBar.isTranslucent = true
-//        tabBar.barStyle = .blackOpaque
         tabBar.layer.masksToBounds = true
         tabBar.layer.cornerRadius = 20
         tabBar.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]

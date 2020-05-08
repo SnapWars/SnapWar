@@ -1,8 +1,7 @@
 import UIKit
 
-
 class SWMainNavViewController: UITabBarController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
@@ -16,28 +15,57 @@ class SWMainNavViewController: UITabBarController {
     }
     
     fileprivate func setup() {
+        tabBar.isHidden = true
+        
         let galleryViewController = SWGalleryViewController()
         let warViewController = SWWarViewController()
         let accountViewController = SWAccountViewController()
         
-        let iconBaseNameToControllerMapping = [
-            "gallery": galleryViewController,
-            "war": warViewController,
-            "account": accountViewController
-        ]
+        let galleryTab = SWTabBarItem(named: "gallery-unfilled")
+        galleryTab.tag = 0
+        galleryTab.addTarget(self, action: #selector(switchTab(sender:)), for: .touchUpInside)
         
-        for (iconBaseName, controller) in iconBaseNameToControllerMapping {
-            let item = UITabBarItem()
-            item.image = UIImage.init(named: iconBaseName + "-unfilled")
-            item.selectedImage = UIImage.init(named: iconBaseName + "-filled")
-            controller.tabBarItem = item
-        }
+        let warTab = SWTabBarItem(named: "war-unfilled")
+        warTab.tag = 2
+        warTab.addTarget(self, action: #selector(switchTab(sender:)), for: .touchUpInside)
+        
+        
+        let avatar = SWAvatar()
+        let accountTab = SWTabBarItem(view: avatar)
+        accountTab.tag = 1
+        accountTab.addTarget(self, action: #selector(switchTab(sender:)), for: .touchUpInside)
         
         viewControllers = [
             galleryViewController,
             warViewController,
-            accountViewController
+            accountViewController,
         ]
+        
+        let tabs = [
+            galleryTab,
+            warTab,
+            accountTab
+        ]
+        
+        for (index, tab) in tabs.enumerated() {
+            tab.tag = index
+            tab.addTarget(self, action: #selector(switchTab(sender:)), for: .touchUpInside)
+        }
+        
+        let customTabBar = SWTabBar(tabs: tabs)
+        view.addSubview(customTabBar)
+        
+        NSLayoutConstraint.activate([
+            customTabBar.leadingAnchor.constraint(equalTo: tabBar.leadingAnchor),
+            customTabBar.trailingAnchor.constraint(equalTo: tabBar.trailingAnchor),
+            customTabBar.topAnchor.constraint(equalTo: tabBar.topAnchor),
+            customTabBar.bottomAnchor.constraint(equalTo: tabBar.bottomAnchor),
+        ])
+    }
+    
+    @objc
+    fileprivate func switchTab(sender: SWTabBarItem) {
+        selectedIndex = sender.tag
     }
 }
 

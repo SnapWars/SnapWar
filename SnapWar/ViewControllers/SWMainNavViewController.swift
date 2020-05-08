@@ -16,14 +16,10 @@ class SWMainNavViewController: UITabBarController {
     
     fileprivate func setup() {
         tabBar.isHidden = true
-        setupTabs()
-        setupStyles()
-    }
-    
-    fileprivate func setupTabs() {
+        
         let galleryViewController = SWGalleryViewController()
         let warViewController = SWWarViewController()
-        let accountViewController = SWAccountViewController()        
+        let accountViewController = SWAccountViewController()
         
         let galleryTab = SWTabBarItem(named: "gallery-unfilled")
         galleryTab.tag = 0
@@ -70,13 +66,6 @@ class SWMainNavViewController: UITabBarController {
     @objc
     fileprivate func switchTab(sender: SWTabBarItem) {
         selectedIndex = sender.tag
-    }
-    
-    fileprivate func setupStyles() {
-        tabBar.isTranslucent = true
-        tabBar.layer.masksToBounds = true
-        tabBar.layer.cornerRadius = 20
-        tabBar.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
     }
 }
 

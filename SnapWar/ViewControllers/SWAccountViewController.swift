@@ -17,7 +17,7 @@ class SWAccountViewController: UIViewController {
     }
     
     func setup() {
-        view?.backgroundColor = SWColorType.white
+        view?.backgroundColor = SWColorType.background
         view.addSubview(avatar)
         view.addSubview(displayName)
 

@@ -5,7 +5,7 @@ class SWWarViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view?.backgroundColor = UIColor.white
+        view?.backgroundColor = SWColorType.background
     }
     
     override func viewWillAppear(_ animated: Bool) {

@@ -1,7 +1,6 @@
 import UIKit
 
 class SWTabBar: UITabBar {
-    
     required init(tabs: [SWTabBarItem]) {
         super.init(frame: .zero)
         
@@ -28,6 +27,7 @@ class SWTabBar: UITabBar {
         
         for tab in tabs {
             row.addArrangedSubview(tab)
+            print(tab.tag)
         }
         
         NSLayoutConstraint.activate([
@@ -39,8 +39,10 @@ class SWTabBar: UITabBar {
     }
     
     fileprivate func setupStyles() {
-        backgroundColor = UIColor.white
-        
+        barTintColor = SWColorType.white
+        tintColor = SWColorType.white
+        layer.borderWidth = 0.3
+        clipsToBounds = true
     }
 
 }

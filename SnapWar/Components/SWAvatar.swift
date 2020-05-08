@@ -4,6 +4,11 @@ import SCSDKBitmojiKit
 class SWAvatar: UIView {
     fileprivate let bitmoji = SCSDKBitmojiIconView()
     
+    var color: UIColor = SWColorType.primary {
+        didSet {
+            self.backgroundColor = color
+        }
+    }
     override func layoutSubviews() {
         setup()
     }

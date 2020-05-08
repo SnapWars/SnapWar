@@ -23,27 +23,40 @@ class SWMainNavViewController: UITabBarController {
     fileprivate func setupTabs() {
         let galleryViewController = SWGalleryViewController()
         let warViewController = SWWarViewController()
-        let accountViewController = SWAccountViewController()
+        let accountViewController = SWAccountViewController()        
         
-        let controllers = [
-            galleryViewController,
-            warViewController,
-            accountViewController
-        ]
-
-        for i in 0..<controllers.count {
-            let item = UITabBarItem()
-            item.tag = i
-            controllers[i].tabBarItem = item
-        }
+        let galleryTab = SWTabBarItem(named: "gallery-unfilled")
+        galleryTab.tag = 0
+        galleryTab.addTarget(self, action: #selector(switchTab(sender:)), for: .touchUpInside)
+        
+        let warTab = SWTabBarItem(named: "war-unfilled")
+        warTab.tag = 2
+        warTab.addTarget(self, action: #selector(switchTab(sender:)), for: .touchUpInside)
+        
+        
+        let avatar = SWAvatar()
+        let accountTab = SWTabBarItem(view: avatar)
+        accountTab.tag = 1
+        accountTab.addTarget(self, action: #selector(switchTab(sender:)), for: .touchUpInside)
         
         viewControllers = [
             galleryViewController,
             warViewController,
-            accountViewController
+            accountViewController,
         ]
         
-        let customTabBar = SWTabBar()
+        let tabs = [
+            galleryTab,
+            warTab,
+            accountTab
+        ]
+        
+        for (index, tab) in tabs.enumerated() {
+            tab.tag = index
+            tab.addTarget(self, action: #selector(switchTab(sender:)), for: .touchUpInside)
+        }
+        
+        let customTabBar = SWTabBar(tabs: tabs)
         view.addSubview(customTabBar)
         
         NSLayoutConstraint.activate([
@@ -51,11 +64,11 @@ class SWMainNavViewController: UITabBarController {
             customTabBar.trailingAnchor.constraint(equalTo: tabBar.trailingAnchor),
             customTabBar.topAnchor.constraint(equalTo: tabBar.topAnchor),
             customTabBar.bottomAnchor.constraint(equalTo: tabBar.bottomAnchor),
-        ])        
+        ])
     }
     
     @objc
-    fileprivate func switchTab(sender: UIButton) {
+    fileprivate func switchTab(sender: SWTabBarItem) {
         selectedIndex = sender.tag
     }
     

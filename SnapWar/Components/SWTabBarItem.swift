@@ -1,31 +1,50 @@
 import UIKit
 
 class SWTabBarItem: UIButton {
-    private let iconImageView = UIImageView()
-    
-    var itemHeight: CGFloat = 0
-    var lock = false
-    convenience init(icon iconName: String) {
+    let contentSizeMultiplier: CGFloat = 0.7
+    convenience init(named: String) {
         self.init()
-        setup(iconName: iconName)
+        addIcon(named: named)
     }
     
-    fileprivate func setup(iconName: String) {
+    convenience init(view: UIView) {
+        self.init()
+        addView(view: view)
+    }
+    
+    fileprivate func addIcon(named: String) {
         translatesAutoresizingMaskIntoConstraints = false
         
-        if let iconImage = UIImage(named: iconName) {
+        let iconImageView = UIImageView()
+        if let iconImage = UIImage(named: named) {
             iconImageView.image = iconImage
         }
         
         addSubview(iconImageView)
         
+        iconImageView.isUserInteractionEnabled = false
         iconImageView.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
             iconImageView.centerXAnchor.constraint(equalTo: centerXAnchor),
             iconImageView.centerYAnchor.constraint(equalTo: centerYAnchor),
-            iconImageView.widthAnchor.constraint(equalTo: heightAnchor, multiplier: 0.6),
-            iconImageView.heightAnchor.constraint(equalTo: heightAnchor, multiplier: 0.6),
+            iconImageView.widthAnchor.constraint(equalTo: heightAnchor, multiplier: contentSizeMultiplier),
+            iconImageView.heightAnchor.constraint(equalTo: heightAnchor, multiplier: contentSizeMultiplier),
+        ])
+    }
+    
+    fileprivate func addView(view: UIView) {
+        addSubview(view)
+        
+        translatesAutoresizingMaskIntoConstraints = false
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.isUserInteractionEnabled = false
+        
+        NSLayoutConstraint.activate([
+            view.centerXAnchor.constraint(equalTo: centerXAnchor),
+            view.centerYAnchor.constraint(equalTo: centerYAnchor),
+            view.widthAnchor.constraint(equalTo: heightAnchor, multiplier: contentSizeMultiplier),
+            view.heightAnchor.constraint(equalTo: heightAnchor, multiplier: contentSizeMultiplier),
         ])
     }
 }

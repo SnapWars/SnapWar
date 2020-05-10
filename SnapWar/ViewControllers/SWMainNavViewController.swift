@@ -11,7 +11,7 @@ class SWMainNavViewController: UITabBarController {
         if(!SWUserEntity.instance.isLoggedIn()) {
             present(SWAuthViewController(), animated: true, completion: nil)
         }
-        
+
     }
     
     fileprivate func setup() {

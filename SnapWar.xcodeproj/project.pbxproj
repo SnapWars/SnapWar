@@ -19,6 +19,7 @@
 		5DA15B9E24551BAA005C7448 /* SWLoginStatusObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA15B9D24551BAA005C7448 /* SWLoginStatusObserver.swift */; };
 		5DC7CA722446F4CF00A4431E /* SWShareContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC7CA712446F4CF00A4431E /* SWShareContainerViewController.swift */; };
 		5DC7CA792446F4CF00A4431E /* SnapWarShareExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5DC7CA6F2446F4CF00A4431E /* SnapWarShareExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		70C2D1B6237EDD2F2D6A6314 /* Pods_SnapWarShareExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D559EE802F5A4C18E8E05B5 /* Pods_SnapWarShareExtension.framework */; };
 		90163A2C2452469300E70EF7 /* Pods_SnapWar.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 97AF3671A5EAFBF62BC4C6C8 /* Pods_SnapWar.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		902FFF21244E509B0007DE4D /* SWPasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902FFF20244E509B0007DE4D /* SWPasswordTextField.swift */; };
 		903CC74B243FBA0C00FA431D /* SWGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903CC74A243FBA0C00FA431D /* SWGalleryViewController.swift */; };
@@ -32,6 +33,7 @@
 		9066048124633E950050C946 /* SWTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9066048024633E950050C946 /* SWTabBar.swift */; };
 		908BAE892460A9A300E9EB29 /* SWAvatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908BAE882460A9A300E9EB29 /* SWAvatar.swift */; };
 		908F3953244B7CA800D619B2 /* SWFullScreenImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908F3952244B7CA800D619B2 /* SWFullScreenImageViewController.swift */; };
+		9091E0B52469E04500674831 /* SWAlbumPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9091E0B42469E04500674831 /* SWAlbumPreview.swift */; };
 		9098FED7244C90F000C2C254 /* SWTextIField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9098FED6244C90F000C2C254 /* SWTextIField.swift */; };
 		9098FED9244C95FE00C2C254 /* SWMainNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EF0A882442467E006433E5 /* SWMainNavViewController.swift */; };
 		909AE0A42450F51200BE65BB /* SWButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909AE0A32450F51200BE65BB /* SWButton.swift */; };
@@ -115,6 +117,7 @@
 		9066048024633E950050C946 /* SWTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWTabBar.swift; sourceTree = "<group>"; };
 		908BAE882460A9A300E9EB29 /* SWAvatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWAvatar.swift; sourceTree = "<group>"; };
 		908F3952244B7CA800D619B2 /* SWFullScreenImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWFullScreenImageViewController.swift; sourceTree = "<group>"; };
+		9091E0B42469E04500674831 /* SWAlbumPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWAlbumPreview.swift; sourceTree = "<group>"; };
 		9098FED6244C90F000C2C254 /* SWTextIField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWTextIField.swift; sourceTree = "<group>"; };
 		909AE0A32450F51200BE65BB /* SWButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWButton.swift; sourceTree = "<group>"; };
 		909AE0A52450F61800BE65BB /* SWPrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SWPrimaryButton.swift; path = Common/SWPrimaryButton.swift; sourceTree = "<group>"; };
@@ -140,6 +143,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70C2D1B6237EDD2F2D6A6314 /* Pods_SnapWarShareExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +303,7 @@
 				9066047E246335A10050C946 /* SWTabBarItem.swift */,
 				9066048024633E950050C946 /* SWTabBar.swift */,
 				9066047C246201F60050C946 /* SWUserSettingsForm.swift */,
+				9091E0B42469E04500674831 /* SWAlbumPreview.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -492,6 +497,7 @@
 				903CC74D243FBBB700FA431D /* SWCreateWarViewController.swift in Sources */,
 				909AE0A42450F51200BE65BB /* SWButton.swift in Sources */,
 				5D0712792456B4FA00276C35 /* SWWarViewController.swift in Sources */,
+				9091E0B52469E04500674831 /* SWAlbumPreview.swift in Sources */,
 				908BAE892460A9A300E9EB29 /* SWAvatar.swift in Sources */,
 				90D94FCD24539C7B0023CFDC /* SWLoginButton.swift in Sources */,
 				9098FED7244C90F000C2C254 /* SWTextIField.swift in Sources */,

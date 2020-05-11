@@ -19,7 +19,6 @@
 		5DA15B9E24551BAA005C7448 /* SWLoginStatusObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA15B9D24551BAA005C7448 /* SWLoginStatusObserver.swift */; };
 		5DC7CA722446F4CF00A4431E /* SWShareContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC7CA712446F4CF00A4431E /* SWShareContainerViewController.swift */; };
 		5DC7CA792446F4CF00A4431E /* SnapWarShareExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5DC7CA6F2446F4CF00A4431E /* SnapWarShareExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		66C386B572DA3D9F76C3FCF0 /* Pods_SnapWarShareExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D559EE802F5A4C18E8E05B5 /* Pods_SnapWarShareExtension.framework */; };
 		90163A2C2452469300E70EF7 /* Pods_SnapWar.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 97AF3671A5EAFBF62BC4C6C8 /* Pods_SnapWar.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		902FFF21244E509B0007DE4D /* SWPasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902FFF20244E509B0007DE4D /* SWPasswordTextField.swift */; };
 		903CC74B243FBA0C00FA431D /* SWGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903CC74A243FBA0C00FA431D /* SWGalleryViewController.swift */; };
@@ -145,7 +144,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66C386B572DA3D9F76C3FCF0 /* Pods_SnapWarShareExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

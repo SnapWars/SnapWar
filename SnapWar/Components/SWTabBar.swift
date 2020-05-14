@@ -27,7 +27,6 @@ class SWTabBar: UITabBar {
         
         for tab in tabs {
             row.addArrangedSubview(tab)
-            print(tab.tag)
         }
         
         NSLayoutConstraint.activate([

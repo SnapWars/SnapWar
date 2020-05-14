@@ -1,10 +1,12 @@
 import UIKit
 
 class SWAlbumPreview: UIView {
-    let image: SWImagePreview
+    let named: String
+    let titleText: String
     
-    required init(named: String) {
-        self.image = SWImagePreview(named: named, frame: .zero)
+    required init(named: String, title: String) {
+        self.named = named
+        self.titleText = title
         super.init(frame: .zero)
     }
     
@@ -12,21 +14,52 @@ class SWAlbumPreview: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func updateConstraints() {
+    override func layoutSubviews() {
         setup()
     }
     
     fileprivate func setup() {
-        addSubview(image)
+        guard let image = UIImage(named: named) else {
+            fatalError("Image not found")
+        }
+        let imageView = UIImageView(image: image)
+        imageView.contentMode = .scaleAspectFill
+        
         layer.cornerRadius = 20
         layer.masksToBounds = true
-        image.translatesAutoresizingMaskIntoConstraints = false
         
+        let overlay = UIView()
+        overlay.backgroundColor = SWColorType.blackOverlay
+        
+        let title = UILabel()
+        
+        title.text = titleText
+        title.textColor = SWColorType.white
+        title.font = UIFont.systemFont(ofSize: 28)
+        
+        
+        addSubview(imageView)
+        addSubview(overlay)
+        addSubview(title)
+        
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        overlay.translatesAutoresizingMaskIntoConstraints = false
+        title.translatesAutoresizingMaskIntoConstraints = false
+
         NSLayoutConstraint.activate([
-            image.centerXAnchor.constraint(equalTo: centerXAnchor),
-            image.centerYAnchor.constraint(equalTo: centerYAnchor),
-            image.widthAnchor.constraint(equalTo: widthAnchor),
-            image.heightAnchor.constraint(equalTo: heightAnchor)
+            imageView.centerXAnchor.constraint(equalTo: centerXAnchor),
+            imageView.centerYAnchor.constraint(equalTo: centerYAnchor),
+            imageView.widthAnchor.constraint(equalTo: widthAnchor),
+            imageView.heightAnchor.constraint(equalTo: heightAnchor),
+            
+            overlay.centerXAnchor.constraint(equalTo: centerXAnchor),
+            overlay.centerYAnchor.constraint(equalTo: centerYAnchor),
+            overlay.widthAnchor.constraint(equalTo: widthAnchor),
+            overlay.heightAnchor.constraint(equalTo: heightAnchor),
+            
+            title.centerXAnchor.constraint(equalTo: centerXAnchor),
+            title.centerYAnchor.constraint(equalTo: centerYAnchor),
+            
         ])
     }
 }

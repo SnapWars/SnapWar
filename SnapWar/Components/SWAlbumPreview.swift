@@ -1,8 +1,8 @@
 import UIKit
 
 class SWAlbumPreview: UIView {
-    let named: String
-    let titleText: String
+    fileprivate let named: String
+    fileprivate let titleText: String
     
     required init(named: String, title: String) {
         self.named = named
